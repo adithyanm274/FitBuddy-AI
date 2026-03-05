@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Exercise Recommender - FitBuddy AI</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    {% load static %}
+    <style>
+        /* Custom styles for body background and button animations */
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(at top left, #1a202c, #000000); /* Subtle dark gradient */
+            background-attachment: fixed; /* Keeps background fixed during scroll */
+            color: #edf2f7; /* Tailwind's gray-200 for general text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Custom colors to mimic Tailwind's palette */
+        .bg-gray-800-custom {
+            background-color: #2d3748 !important; /* Tailwind gray-800 */
+        }
+        .bg-gray-700-custom {
+            background-color: #4a5568 !important; /* Tailwind gray-700 */
+        }
+        .bg-gray-900-custom {
+            background-color: #1a202c !important; /* Tailwind gray-900 */
+        }
+        .text-green-400-custom {
+            color: #68d391 !important; /* Tailwind green-400 */
+        }
+        .text-green-300-custom {
+            color: #9ae6b4 !important; /* Tailwind green-300 */
+        }
+        .text-gray-300-custom {
+            color: #cbd5e0 !important; /* Tailwind gray-300 */
+        }
+        .text-gray-400-custom {
+            color: #a0aec0 !important; /* Tailwind gray-400 */
+        }
+        .border-gray-700-custom {
+            border-color: #4a5568 !important; /* Tailwind gray-700 */
+        }
+        .border-gray-600-custom {
+            border-color: #718096 !important; /* Tailwind gray-600 */
+        }
+        .text-blue-400-custom {
+            color: #63b3ed !important; /* Tailwind blue-400 */
+        }
+        .text-blue-500-custom {
+            color: #4299e1 !important; /* Tailwind blue-500 */
+        }
+        .hover-text-green-400-custom:hover {
+            color: #68d391 !important;
+        }
+        .hover-text-white-custom:hover {
+            color: #fff !important;
+        }
+        .hover-bg-green-700-custom:hover {
+            background-color: #2f855a !important; /* Tailwind green-700 */
+        }
+        .focus-ring-green-500-custom:focus {
+            box-shadow: 0 0 0 0.25rem rgba(104, 211, 145, 0.5) !important; /* Tailwind green-500 ring */
+        }
+
+        /* Navbar specific styling */
+        .navbar-custom {
+            background-color: #2d3748 !important; /* Tailwind gray-800 */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind shadow-lg equivalent */
+            padding-top: 0.375rem !important; /* py-1.5 */
+            padding-bottom: 0.375rem !important; /* py-1.5 */
+            border-bottom-left-radius: 0.5rem; /* rounded-b-lg */
+            border-bottom-right-radius: 0.5rem; /* rounded-b-lg */
+        }
+        .navbar-brand-custom {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 700; /* font-bold */
+        }
+        .nav-link-active-custom {
+            background-color: #38a169 !important; /* Tailwind green-600 */
+            color: #fff !important;
+            padding: 0.5rem 1rem; /* px-4 py-2 */
+            border-radius: 9999px; /* rounded-full */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+        }
+        .nav-link-active-custom:hover {
+            background-color: #2f855a !important; /* Tailwind green-700 */
+        }
+
+        /* Main content margin-top to clear fixed navbar */
+        .mt-20-custom {
+            margin-top: 5rem !important; /* Equivalent to Tailwind's mt-20 */
+        }
+
+        /* Panel styling */
+        .panel-custom {
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+            border: 1px solid #4a5568; /* Tailwind border-gray-700 */
+        }
+
+        /* History panel specific height */
+        .history-panel-height {
+            max-height: 85vh;
+        }
+
+        /* Button styles to mimic Tailwind */
+        .btn-green-600-custom {
+            background-color: #38a169 !important; /* Tailwind green-600 */
+            border-color: #38a169 !important;
+            color: #fff !important;
+            font-weight: 600; /* font-semibold */
+            border-radius: 9999px !important; /* rounded-full */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-green-600-custom:hover {
+            background-color: #2f855a !important; /* Tailwind green-700 */
+            border-color: #2f855a !important;
+            transform: scale(1.05); /* hover:scale-105 */
+        }
+        .btn-green-600-custom:active {
+            transform: scale(0.95); /* active:scale-95 */
+        }
+        /* Ripple effect for buttons */
+        .btn-green-600-custom::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.15); /* White ripple effect */
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.4s ease-out, height 0.4s ease-out;
+            z-index: 0;
+        }
+        .btn-green-600-custom:hover::before {
+            width: 150%; /* Expand ripple on hover */
+            height: 150%;
+        }
+        .btn-green-600-custom span {
+            position: relative;
+            z-index: 1; /* Ensure text is above the ripple effect */
+        }
+
+        /* Profile card styling */
+        .profile-card-custom {
+            background-color: #4a5568; /* Tailwind gray-700 */
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06); /* Tailwind shadow-inner */
+            border: 1px solid #718096; /* Tailwind border-gray-600 */
+        }
+
+        /* Result box styling */
+        .result-box-custom {
+            background-color: #1a202c; /* Tailwind gray-900 */
+            border: 1px solid #4a5568; /* Tailwind border-gray-700 */
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06); /* Tailwind shadow-inner */
+            min-height: 250px;
+        }
+
+        /* Loading indicator animation */
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .spinner-border-custom {
+            animation: spin 1s linear infinite;
+            border-width: 0.25em;
+            border-top-color: #68d391; /* green-500 */
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            width: 3rem; /* h-12 w-12 */
+            height: 3rem;
+        }
+
+        /* Animation for result content fade-in */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-content {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        /* Mobile menu specific styles */
+        .offcanvas-custom {
+            background-color: #2d3748 !important; /* Tailwind gray-800 */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Tailwind shadow-xl */
+        }
+        .offcanvas-backdrop-custom {
+            background-color: rgba(0, 0, 0, 0.75); /* bg-black bg-opacity-75 */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 767.98px) {
+            .navbar-brand-custom {
+                font-size: 1.125rem; /* Smaller logo on mobile */
+            }
+            .btn-green-600-custom {
+                padding: 0.65rem 1.25rem !important;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Custom width for sidebar on medium and larger screens */
+        @media (min-width: 768px) {
+            .sidebar-md-w-64 {
+                width: 256px !important; /* Fixed width for md:w-64 */
+                max-width: 256px !important; /* Ensure it doesn't grow beyond this */
+            }
+            .content-md-flex-grow {
+                flex-grow: 1 !important;
+                flex-shrink: 1 !important;
+                flex-basis: 0 !important; /* Allow it to shrink and grow */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900-custom text-white min-vh-100 d-flex flex-column">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-custom">
+        <div class="container-fluid px-4 py-3">
+            <!-- Brand Logo and Name -->
+            <a class="navbar-brand d-flex align-items-center me-auto navbar-brand-custom hover-text-green-400-custom" href="#">
+                <i class="fas fa-dumbbell text-green-400-custom me-2"></i>
+                <span>FitBuddy AI</span>
+            </a>
+            <!-- Desktop Navigation Links -->
+            <div class="d-none d-md-flex gap-4">
+                <ul class="navbar-nav flex-row align-items-center gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center text-gray-300-custom hover-text-white-custom" href="{% url 'feedback' %}"><i class="fas fa-comment me-2"></i> <span>Feedback</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center text-gray-300-custom hover-text-white-custom" href="{% url 'logout' %}"><i class="fas fa-sign-out-alt me-2"></i> <span>Logout</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center text-gray-300-custom hover-text-white-custom" href="{% url 'food_recommender' %}"><i class="fas fa-utensils me-2"></i> <span>Food Recommender</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center text-gray-300-custom hover-text-white-custom" href="{% url 'user_home' %}"><i class="fas fa-robot me-2"></i> <span>Chatbot</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-active-custom d-flex align-items-center" href="{% url 'exercise_recommender' %}"><i class="fas fa-running me-2"></i> <span>Exercise</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Mobile Menu Button (Hamburger Icon) -->
+            <button class="navbar-toggler d-md-none text-gray-300-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (Offcanvas) -->
+    <div class="offcanvas offcanvas-end text-white offcanvas-custom" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-3">
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center fs-5 text-gray-300-custom hover-text-white-custom" href="{% url 'feedback' %}"><i class="fas fa-comment me-3"></i> <span>Feedback</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center fs-5 text-gray-300-custom hover-text-white-custom" href="{% url 'logout' %}"><i class="fas fa-sign-out-alt me-3"></i> <span>Logout</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center fs-5 text-gray-300-custom hover-text-white-custom" href="{% url 'food_recommender' %}"><i class="fas fa-utensils me-3"></i> <span>Food Recommender</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center fs-5 text-gray-300-custom hover-text-white-custom" href="{% url 'user_home' %}"><i class="fas fa-robot me-3"></i> <span>Chatbot</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-active-custom d-flex align-items-center fs-5" href="{% url 'exercise_recommender' %}"><i class="fas fa-running me-3"></i> <span>Exercise</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container-fluid d-flex flex-column flex-md-row flex-grow-1 mt-20-custom p-4 gap-4">
+
+        <!-- Left Panel: Workout History -->
+        <div class="col-12 col-md-auto sidebar-md-w-64 bg-gray-800-custom p-4 panel-custom flex-shrink-0 overflow-auto history-panel-height">
+            <h2 class="fs-4 fw-bold text-green-400-custom mb-4 d-flex align-items-center gap-2">
+                <i class="fas fa-history text-green-400-custom"></i>
+                <span>Workout History</span>
+            </h2>
+            <!-- History Day Buttons -->
+            <div id="historyDays" class="d-flex flex-wrap gap-2 mb-4 justify-content-center"></div>
+            <!-- History Details Display -->
+            <div id="historyDetails" class="d-flex flex-column gap-3"></div>
+        </div>
+
+        <!-- Right Panel: Exercise Plan -->
+        <div class="col-12 col-md-auto content-md-flex-grow bg-gray-800-custom p-4 panel-custom d-flex flex-column justify-content-between">
+            <div>
+                <h1 class="fs-2 fw-bold text-center mb-4 text-green-400-custom d-flex align-items-center justify-content-center gap-3">
+                    <i class="fas fa-heartbeat text-green-400-custom"></i>
+                    <span>Exercise Plan</span>
+                </h1>
+
+                <!-- Profile Card -->
+                <div class="profile-card-custom p-4 rounded-3 shadow-sm mb-4 small">
+                    <div class="row row-cols-1 row-cols-md-2 g-3 g-md-4">
+                        <p class="col d-flex align-items-center gap-2"><i class="fas fa-user text-green-400-custom"></i> <strong>Age:</strong> <span class="text-green-300-custom">{{ user_data.age }}</span></p>
+                        <p class="col d-flex align-items-center gap-2"><i class="fas fa-weight text-green-400-custom"></i> <strong>Weight:</strong> <span class="text-green-300-custom">{{ user_data.weight }} kg</span></p>
+                        <p class="col d-flex align-items-center gap-2"><i class="fas fa-venus-mars text-green-400-custom"></i> <strong>Gender:</strong> <span class="text-green-300-custom">{{ user_data.gender }}</span></p>
+                        <p class="col d-flex align-items-center gap-2"><i class="fas fa-chart-bar text-green-400-custom"></i> <strong>BMI:</strong> <span class="text-green-300-custom">{{ user_data.bmi }}</span></p>
+                        <p class="col d-flex align-items-center gap-2"><i class="fas fa-ruler-vertical text-green-400-custom"></i> <strong>Height:</strong> <span class="text-green-300-custom">{{ user_data.height }} cm</span></p>
+                        <p class="col d-flex align-items-center gap-2"><i class="fas fa-crosshairs text-green-400-custom"></i> <strong>Goal:</strong> <span class="text-green-300-custom">{{ user_data.goal }}</span></p>
+                    </div>
+                    <p class="text-gray-400-custom text-center mt-3 small fst-italic"><small>Personalized plan based on your data.</small></p>
+                </div>
+
+                <!-- Day Selection Buttons -->
+                <div class="text-center mb-4">
+                    <h2 class="fs-5 fw-semibold mb-3 text-gray-200">Select Day:</h2>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <button class="btn btn-green-600-custom py-3 px-4" onclick="generateExercise(1)"><span>Day 1</span></button>
+                        <button class="btn btn-green-600-custom py-3 px-4" onclick="generateExercise(2)"><span>Day 2</span></button>
+                        <button class="btn btn-green-600-custom py-3 px-4" onclick="generateExercise(3)"><span>Day 3</span></button>
+                        <button class="btn btn-green-600-custom py-3 px-4" onclick="generateExercise(4)"><span>Day 4</span></button>
+                        <button class="btn btn-green-600-custom py-3 px-4" onclick="generateExercise(5)"><span>Day 5</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Result Box -->
+            <div class="result-box-custom p-4 d-flex flex-column justify-content-center align-items-center overflow-auto">
+                <div id="resultPlaceholder" class="text-gray-400-custom text-center fs-5">Select a day to generate your workout plan!</div>
+                <div id="loadingIndicator" class="d-none flex-column align-items-center">
+                    <div class="spinner-border spinner-border-custom" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-3 text-green-300-custom">Generating your personalized plan...</p>
+                </div>
+                <div id="result" class="d-none text-gray-100 w-100 p-2 fade-in-content"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Hidden input for CSRF token -->
+    <input type="hidden" id="csrf-token" value="{{ csrf_token }}">
+
+    <!-- Bootstrap JS CDN (Bundle with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script>
+        // DOMContentLoaded ensures the script runs after the HTML is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initial load of workout history days when the page loads
+            loadWorkoutDays();
+        });
+
+        /**
+         * Generates and displays an exercise plan for a given day.
+         * Fetches data from the backend and updates the UI.
+         * @param {number} day - The day number for which to generate the exercise.
+         */
+        function generateExercise(day) {
+            const resultDiv = document.getElementById('result');
+            const placeholder = document.getElementById('resultPlaceholder');
+            const loading = document.getElementById('loadingIndicator');
+
+            // Show loading indicator, hide placeholder and previous result
+            placeholder.classList.add('d-none');
+            resultDiv.classList.add('d-none');
+            loading.classList.remove('d-none');
+            resultDiv.classList.remove('fade-in-content'); // Remove animation class to re-apply
+
+            // Fetch exercise data from the Django backend
+            fetch('/user/generate_exercise/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': document.getElementById('csrf-token').value // Include CSRF token for security
+                },
+                body: JSON.stringify({ day_number: day }) // Send the selected day number
+            })
+            .then(res => {
+                // Check if the response was successful
+                if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+                return res.json(); // Parse the JSON response
+            })
+            .then(data => {
+                loading.classList.add('d-none'); // Hide loading indicator
+
+                // Construct the HTML for the exercise plan
+                resultDiv.innerHTML = `
+                    <h5 class="fs-5 fw-bold mb-3 text-green-300-custom">Day ${data.day}</h5>
+                    <p class="mb-2"><strong>Workout Type:</strong> <span class="text-gray-300-custom">${data.workout_type}</span></p>
+                    <p class="mb-2"><strong>Difficulty:</strong> <span class="text-gray-300-custom">${data.difficulty}</span></p>
+                    <div class="mt-3">
+                        <p class="fw-bold fs-5 mb-2">Exercises:</p>
+                        <ul class="list-unstyled ps-4 d-flex flex-column gap-2 text-gray-300-custom">
+                            ${
+                                // Check if data.exercise is an array and map through it
+                                Array.isArray(data.exercise)
+                                    ? data.exercise.map(ex => {
+                                          // Capitalize each word in the exercise name for better display
+                                          const titleName = ex.name
+                                              .split(" ")
+                                              .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                                              .join(" ");
+                                          return `
+                                              <li>
+                                                  <strong>${titleName}</strong>: ${ex.sets} sets of ${ex.reps} reps
+                                                  ${ex.video_url ? `<br><a href="${ex.video_url}" target="_blank" class="text-blue-500-custom text-decoration-underline hover-text-blue-400-custom">Watch Video</a>` : ''}
+                                              </li>
+                                          `;
+                                      }).join('')
+                                      : `<li>${data.exercise}</li>` // Fallback if exercise is not an array
+                            }
+                        </ul>
+                    </div>
+                `;
+
+                resultDiv.classList.remove('d-none'); // Show the result content
+                resultDiv.classList.add('fade-in-content'); // Apply fade-in animation
+            })
+            .catch(error => {
+                loading.classList.add('d-none'); // Hide loading indicator on error
+                resultDiv.innerHTML = `<p class="text-danger">Error: ${error.message}. Please try again.</p>`;
+                resultDiv.classList.remove('d-none'); // Show error message
+                resultDiv.classList.add('fade-in-content'); // Apply fade-in animation for error
+            });
+        }
+
+        /**
+         * Loads and displays the workout days from history.
+         * Fetches workout history and creates buttons for each unique day.
+         */
+        function loadWorkoutDays() {
+            fetch('/user/workout_history/')
+                .then(res => res.json())
+                .then(data => {
+                    const daysContainer = document.getElementById('historyDays');
+                    const grouped = {};
+
+                    // Group history items by day number to get unique days
+                    data.forEach(item => {
+                        if (!grouped[item.day_number]) {
+                            grouped[item.day_number] = item; // Store the first occurrence for each day
+                        }
+                    });
+
+                    // Sort the unique day numbers
+                    const sortedDays = Object.keys(grouped).sort((a, b) => a - b);
+
+                    // Generate buttons for each unique day
+                    daysContainer.innerHTML = sortedDays.map(day => `
+                        <button class="btn btn-green-600-custom py-1 px-2 fs-6 shadow-sm"
+                            onclick="showWorkoutDetails(${day})">
+                            Day ${day}
+                        </button>
+                    `).join('');
+                })
+                .catch(error => {
+                    console.error("Error loading workout days:", error);
+                    document.getElementById('historyDays').innerHTML = `<p class="text-danger">Could not load history.</p>`;
+                });
+        }
+
+        /**
+         * Displays the detailed workout plan for a selected day from history.
+         * @param {number} day - The day number for which to show details.
+         */
+       function showWorkoutDetails(day) {
+            const detailsContainer = document.getElementById('historyDetails');
+            fetch('/user/workout_history/')
+                .then(res => res.json())
+                .then(data => {
+                    const dayData = data.filter(item => item.day_number === day);
+                    if (dayData.length === 0) {
+                        detailsContainer.innerHTML = `<p class="text-gray-400-custom">No detailed data available for Day ${day}.</p>`;
+                        return;
+                    }
+
+                    const exercises = dayData[0].exercise;
+                    const exerciseList = Array.isArray(exercises) ? exercises.map(ex => {
+                        const title = ex.name
+                            .split(' ')
+                            .map(word => word[0].toUpperCase() + word.slice(1))
+                            .join(' ');
+                        return `
+                            <li class="mb-2">
+                                <strong>${title}</strong>: ${ex.sets} sets of ${ex.reps} reps
+                                ${ex.video_url ? `<br><a href="${ex.video_url}" target="_blank" class="text-blue-400-custom text-decoration-underline hover-text-blue-300-custom">Watch Video</a>` : ''}
+                            </li>
+                        `;
+                    }).join('') : `<li>${exercises}</li>`;
+
+                    detailsContainer.innerHTML = `
+                        <div class="bg-gray-700-custom rounded-lg p-4 border border-gray-600-custom fade-in-content">
+                            <h3 class="text-green-300-custom fw-bold mb-2 fs-5">Day ${dayData[0].day_number}</h3>
+                            <p class="text-gray-300-custom mb-2"><strong>Type:</strong> ${dayData[0].workout_type}</p>
+                            <p class="text-gray-300-custom mb-2"><strong>Difficulty:</strong> ${dayData[0].exercise_difficulty}</p>
+                            <ul class="list-unstyled ps-4 text-gray-300-custom mt-3">${exerciseList}</ul>
+                        </div>
+                    `;
+                })
+                .catch(error => {
+                    console.error("Error showing workout details:", error);
+                    detailsContainer.innerHTML = `<p class="text-danger">Could not load details for Day ${day}.</p>`;
+                });
+        }
+
+    </script>
+</body>
+</html>

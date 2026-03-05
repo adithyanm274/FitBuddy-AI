@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Django
+*.log
+local_settings.py
+media/
+staticfiles/
+
+# MySQL
+*.my.cnf
+*.cnf
+mysql.cnf
+mysql_config
+# If you keep any local SQL dump files
+*.sql
+*.sql.gz
+
+# Environment variables (for database credentials, secret key, etc.)
+.env
+.env.local
+.env.*.local
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+Fitness/classifier_model/
+Fitness/data_creation/*.joblib
+Fitness/data_creation/*.csv
+db.sqlite3
+data/*.json
+*.joblib
+*.pth
+*.xlsx

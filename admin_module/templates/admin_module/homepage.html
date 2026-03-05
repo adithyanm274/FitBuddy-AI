@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - FitBuddy AI</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Inter (default) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font to the entire body */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        /* Custom styles for the navbar toggle icon animation */
+        /* This is for the mobile hamburger icon, ensuring it's visible against the dark navbar */
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 shadow-lg py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a class="text-white text-2xl font-extrabold tracking-wide" href="#">FitBuddy AI Admin</a>
+
+            <div class="block lg:hidden">
+                <button id="navbar-toggle-btn" class="text-gray-400 hover:text-white focus:outline-none focus:text-white">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="hidden lg:flex lg:items-center lg:w-auto" id="navbar-menu">
+                <ul class="flex flex-col lg:flex-row lg:space-x-6 text-lg">
+                    <li class="my-2 lg:my-0">
+                        <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition duration-300 ease-in-out" href="{% url 'manage_users' %}">Manage User Accounts</a>
+                    </li>
+                    <li class="my-2 lg:my-0">
+                        <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition duration-300 ease-in-out" href="{% url 'admin_feedback_list' %}">View User Feedback</a>
+                    </li>
+                    <li class="my-2 lg:my-0">
+                        <a class="bg-red-600 text-white font-semibold px-4 py-2 rounded-md hover:bg-red-700 transition duration-300 ease-in-out shadow-md" href="{% url 'logout' %}">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- Welcome Section -->
+        <div class="bg-white p-8 rounded-xl shadow-lg mb-8 text-center">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Welcome, Admin!</h1>
+            <p class="text-lg text-gray-600">This is your central hub for managing the FitBuddy AI platform. Use the navigation above to oversee user accounts and review valuable feedback.</p>
+        </div>
+
+        <!-- Statistics Dashboard -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Total Registered Users Card -->
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-6 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-sm font-semibold uppercase tracking-wider opacity-90">Total Registered Users</h2>
+                    <!-- Icon for Users - You can replace with a Font Awesome or custom SVG icon if desired -->
+                    <svg class="h-8 w-8 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h-2V10h2a2 2 0 012 2v8a2 2 0 01-2 2zm-4 0h-2V7h2a2 2 0 012 2v11a2 2 0 01-2 2zM7 20H5V4h2a2 2 0 012 2v14a2 2 0 01-2 2z"></path>
+                    </svg>
+                </div>
+                <div class="text-5xl font-extrabold">{{ total_users }}</div>
+                <p class="text-sm opacity-80 mt-2">Overall user count across the platform.</p>
+            </div>
+
+            <!-- Total Feedback Entries Card -->
+            <div class="bg-gradient-to-r from-green-500 to-green-600 text-white p-6 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-sm font-semibold uppercase tracking-wider opacity-90">Total Feedback Entries</h2>
+                    <!-- Icon for Feedback - You can replace with a Font Awesome or custom SVG icon if desired -->
+                    <svg class="h-8 w-8 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.105A9.702 9.702 0 015 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                    </svg>
+                </div>
+                <div class="text-5xl font-extrabold">{{ total_feedbacks }}</div>
+                <p class="text-sm opacity-80 mt-2">Cumulative number of feedback submissions.</p>
+            </div>
+        </div>
+
+        <!-- Placeholder for future sections -->
+        <div class="bg-white p-6 rounded-xl shadow-md mt-8 text-center text-gray-500">
+            <p>More dashboard features and insights coming soon!</p>
+        </div>
+
+    </div>
+
+    <script>
+        // JavaScript for mobile navbar toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbarToggleBtn = document.getElementById('navbar-toggle-btn');
+            const navbarMenu = document.getElementById('navbar-menu');
+
+            if (navbarToggleBtn && navbarMenu) {
+                navbarToggleBtn.addEventListener('click', () => {
+                    navbarMenu.classList.toggle('hidden');
+                    // For mobile, make sure it stacks vertically when visible
+                    navbarMenu.classList.toggle('flex');
+                    navbarMenu.classList.toggle('flex-col');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

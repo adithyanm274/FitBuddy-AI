@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FitBuddy AI - Your Personal Fitness AI</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Apply the Inter font family to the body */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0c101d; /* A deep navy blue for the base background */
+        }
+
+        /* Hero section background with a subtle gradient and noise pattern */
+        .hero-section {
+            background: radial-gradient(ellipse at top, #1a202c, #0c101d);
+        }
+
+        /* Style for the CTA button with a hover effect, matching the dashboard */
+        .cta-btn {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .cta-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.4s ease-out, height 0.4s ease-out;
+            z-index: -1;
+        }
+        .cta-btn:hover::before {
+            width: 250%;
+            height: 250%;
+        }
+
+        /* Animation for elements to fade in on scroll */
+        @keyframes fadeInOnScroll {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeInOnScroll 0.8s ease-out forwards;
+        }
+
+        /* Styles for the mobile menu transition */
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
+        /* Glassmorphism effect for cards and navbar */
+        .glass-effect {
+            background: rgba(26, 32, 44, 0.6); /* Semi-transparent background */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header & Navbar -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a class="text-2xl font-bold text-white hover:text-green-400 transition duration-300 flex items-center space-x-2" href="#">
+                <i class="fas fa-dumbbell text-green-400"></i>
+                <span>FitBuddy AI</span>
+            </a>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#features" class="text-gray-300 hover:text-white transition">Features</a>
+                <a href="#how-it-works" class="text-gray-300 hover:text-white transition">How It Works</a>
+                <a href="{% url 'login' %}" class="text-gray-300 hover:text-white transition">Login</a>
+                <a href="{% url 'register_user' %}" class="cta-btn bg-green-600 text-white font-semibold py-2 px-5 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    <span>Sign Up </span>
+                </a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+ 
+
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section pt-32 pb-20 md:pt-48 md:pb-32 text-center relative overflow-hidden">
+            <div class="container mx-auto px-4 relative z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+                    Stop Guessing. Start Training Smarter.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    FitBuddy AI crafts hyper-personalized workout and meal plans based on your unique body data, goals, and lifestyle. Achieve your fitness peak with the power of AI.
+                </p>
+                <a href="{% url 'register_user' %}" class="cta-btn bg-green-600 text-white font-bold py-4 px-10 rounded-full shadow-2xl transition duration-300 transform hover:scale-105 text-lg">
+                    <span>Get Your Personal Plan</span>
+                </a>
+                <p class="text-gray-400 mt-4 text-sm">Free to start. No credit card required.</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Your All-in-One Fitness Solution</h2>
+                    <p class="text-gray-400 mt-2">Everything you need to succeed, personalized by AI.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature Card 1 -->
+                    <div class="glass-effect p-6 rounded-2xl text-center transition duration-300 hover:border-green-400 hover:-translate-y-2">
+                        <i class="fas fa-running text-green-400 text-4xl mb-4"></i>
+                        <h3 class="font-bold text-xl mb-2 text-white">AI Exercise Plans</h3>
+                        <p class="text-gray-400">Daily workouts tailored to your goals, from weight loss to muscle gain.</p>
+                    </div>
+                    <!-- Feature Card 2 -->
+                    <div class="glass-effect p-6 rounded-2xl text-center transition duration-300 hover:border-green-400 hover:-translate-y-2">
+                        <i class="fas fa-utensils text-green-400 text-4xl mb-4"></i>
+                        <h3 class="font-bold text-xl mb-2 text-white">Smart Food Recommender</h3>
+                        <p class="text-gray-400">Get meal suggestions that align with your fitness plan and dietary needs.</p>
+                    </div>
+                    <!-- Feature Card 3 -->
+                    <div class="glass-effect p-6 rounded-2xl text-center transition duration-300 hover:border-green-400 hover:-translate-y-2">
+                        <i class="fas fa-robot text-green-400 text-4xl mb-4"></i>
+                        <h3 class="font-bold text-xl mb-2 text-white">24/7 AI Chatbot</h3>
+                        <p class="text-gray-400">Have questions? Our AI is always ready to provide fitness advice and motivation.</p>
+                    </div>
+                    <!-- Feature Card 4 -->
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Get Started in 3 Simple Steps</h2>
+                    <p class="text-gray-400 mt-2">Your personalized fitness journey is just moments away.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <!-- Step 1 -->
+                    <div class="p-6">
+                        <div class="text-5xl font-extrabold text-green-400 mb-4">1</div>
+                        <h3 class="font-bold text-xl mb-2 text-white">Create Your Profile</h3>
+                        <p class="text-gray-400">Sign up and provide your basic information like age, weight, height, and fitness goals.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="p-6">
+                        <div class="text-5xl font-extrabold text-green-400 mb-4">2</div>
+                        <h3 class="font-bold text-xl mb-2 text-white">Generate Your Plan</h3>
+                        <p class="text-gray-400">Our AI analyzes your data and instantly generates a unique workout and nutrition plan.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="p-6">
+                        <div class="text-5xl font-extrabold text-green-400 mb-4">3</div>
+                        <h3 class="font-bold text-xl mb-2 text-white">Start Achieving</h3>
+                        <p class="text-gray-400">Follow your daily plan and watch yourself transform.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-lg font-bold text-white">FitBuddy AI</p>
+                    <p class="text-gray-400">&copy; 2024. All Rights Reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu functionality
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+
+            function toggleMenu(active) {
+                mobileMenu.classList.toggle('active', active);
+                mobileMenuOverlay.classList.toggle('hidden', !active);
+            }
+
+            mobileMenuButton.addEventListener('click', () => toggleMenu(true));
+            closeMobileMenuButton.addEventListener('click', () => toggleMenu(false));
+            mobileMenuOverlay.addEventListener('click', () => toggleMenu(false));
+
+            // Navbar style change on scroll
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('glass-effect', 'shadow-lg');
+                } else {
+                    navbar.classList.remove('glass-effect', 'shadow-lg');
+                }
+            });
+
+            // Intersection Observer for fade-in animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('section > div').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
