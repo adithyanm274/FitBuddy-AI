@@ -1,0 +1,2194 @@
+[
+{
+    "model": "user_module.feedback",
+    "pk": 1,
+    "fields": {
+        "name": "Adhi M",
+        "email": "adhimca23@gmail.com",
+        "message": "this chat bot is wornderfull experience",
+        "submitted_at": "2026-03-01T17:32:12.445Z"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$1pIQBDDEL36krpWpA74H0W$Ey2dEm1Cf9zEkO/YXP4iwPf0w6wzqAc6qoN1dVcxzvE=",
+        "last_login": "2026-03-05T11:15:46.222Z",
+        "is_superuser": false,
+        "username": "Adithyan M",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-03-01T07:19:37.149Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$lSHJ1AGkZ8m3cRibHrJMgj$PqpfbD303nces7jSn33yyDY+3Zk1xQ1CJ+wVCfez6xI=",
+        "last_login": "2026-04-06T13:45:26.140Z",
+        "is_superuser": true,
+        "username": "adi",
+        "first_name": "",
+        "last_name": "",
+        "email": "adi@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-03-01T17:39:45.420Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$SIFCfJZ2F2xqmxk82oqbqJ$e4WeunBe8zkXXDN9RhLDNrNr8NErlNdUJCz88Uatez4=",
+        "last_login": "2026-04-07T15:52:10.531Z",
+        "is_superuser": false,
+        "username": "adithyan",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-06T13:48:23.065Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "28zuy9ey08q27dbu7id7wyh1bjnxsddx",
+    "fields": {
+        "session_data": ".eJztnUtvHFlyhf9KobWVG5XvzFl6Ya-8sgEvbGNQEqsleiRSoKiRG4b_u5NkVeW9cZ8nbmQ1I9kwDI-nVa1HhW5EfHHixP_-8tfDj8fPf_3x_fjw19ubX_7yS_XLe_O_-3D4-Lfj3dM_uPnvw92n-18_3t89Ptx--PXph_x6-qfff_2X-5vjl388_VjrX_D58P3z_OmmHcfD1B76Y9PejNVwHD_eHKbq4_7Dh-owtjf9vtkf-37f3_THD79VNx-mvqracfow1b-1N4d2_pd-PR6-fP_lL__xv8__6a93h6_H-V_878fbT58fd_98uL3b_cv83-_mH3lz_P7x4fbb4-393fwj_u1-9-3h-O3wcNz9fPnBn55-8NO_ZPd-9_3x8PC4-_D7_F8-fj4-3N592s3_d_fb_Zcv9z-f_r_5fx-ON7fHu8fvf9l9ONzN__N-9_Pz7eNx93D78fh-9-H-9svxZnf89On70z-4_3Lcfb398rf3u8Pdze7j59unP5T53zn_zN9_3f3j8dP8c88_3c_5z-XpX__yg-6_fXv6f36___Gw-_vx0_Hx8OHLcf7h_zr_Qf7nj_3-OJ1-6vmXszvsvh3udj9vHz_P__HD7ePu_jfjF7T7cfd4-2X35el3-uX33YeH-593x5tfd__2-Xg3_5pubsxf8PNPv_yaX3419_d_m3__D7vuH4b5v7378fj0K_mn27vDly-_P_2B3T48_Srs39nzJ7_ffv16fHj-7GH32_Hn7uv9w3H5V_zr8eHv83dwePj6_KOPd_99__v8A-d_-nA7f1c_vr98J9-OD78dPz4-_2uML-zX-Yv9eHg8frp_-N3-3n_5v_d_ZEzM__H4t_mr-_Tj4fH97vP93XH-U7L_dN7v7r_czr_3-Q_-JSwOf7__eLi5L4kH86cNRcXzLyYdEJ6v8vLrRULi9Lt6w7Fwf3j8_vTlH29uDg9P__f4fX4h7Aj5-HA8fL38s6ff_aeHw939l0NJNDz9xKEosH856XCwIuv5V2D8ipF4OP2-3nA8vDytPz8fD_Nn5j_FGxoMZiKhb4ZQaDi_hlCcWN97MkqMjOMmuj-jBImS7z-Px8fdt_vHw-P90fN-WEXFyxv7_pS5z99BSYDYP73UK0KqCjM3ZAYGibC3GRt2tjDLiHMg0JLT_jpLAsN69wNhsRQKyYgwQ4BXc5JIfbtR8e14mH8Luw8_Hh-PD-93Xw-_39_dHW6fQuTcotBH5SWbLC98SWBYP30oMpZfVEZL8tLcuOGLJRJSt7zN2PD1qJ8e7n_Mv8UPx-Nv788J99ygms_662hQjV-tWQRh3amVrd5uNFzSROTJOPWsssnj_NoH4sF-QpIhYTwmT7-Cl8b2z8yBx8PpuybRYDcl1mthZ-uSiHj50mTiwXnr6ZuRXWNadcjbjAkHVj1TDItrOiHx_GUWFZd2wxgqL5-4Bkw0mcGwvCpvMw6sL_kCMu1e1Oo_l1e5jGQu31YpyHSyPqPvJLnmbcbCuYq0XoFoMDz9VV2vfjT_il8pDp7fnrcbAWaFaHAHL9I0GgrjiyqJBuMvYTl5cBEos62gieZtRoY1_Ty9E2a0-NCDwMTLaCFDj8TLE4J2E3zk8OfE65ICjCfCMxG33guhwUaiwwTeB_9EnL4Xf84zYALlfPUmrLbC5Losin696DSDBsyfVKpkqnGpHxwq4eUQxhe39nTj_Hc5GR82vigGEvTpeZtRYqQUWlJcQsZgl8afeJGU4pI3AkFByoUMVrUkBBhc0jB6m5Fw-pbN7GE_IU4usf5CrkYtjbSQbkqpioaZRNyn5m3GhJ9apvoQsbiQ5Jdi_Yii2HhX11B4zD--cEpuvh5OaJgky_ybuvqYHHlCPIHB4FrOQ_SKY6QBY6QpU-_63xQi3hWqM3IEvOSRSQbIBVmy9Ltqao13dQvGRQv3sGZB4YQBeVlkJ-dmXVCUVuwgcHPDBmfn7-oOjIyuhH6-BEY0mYgVHGn8mRcVMklEVaXRgzHR83T_VNodalYkm9WI7h_Vc9uKTLbmX00OGcCoGEp13UYCsdDWS_SIA648XTeAyel3e6k2tsm23tUjGCFjcQ-7RMgFeSzZRlLCm9m-5gfHQrboZsjW1Lvv6gmMi4m7R2ZHh7Us5GQUGZFefJEM60ZoIDBTihaN3rtmj8VFs-ftk73UFFYKuZIqw_gqgkXHkiP-1GV4YqQCY6QqmJpYJSh5TDwtrMQeamp4AhFzd6eQ3cSqmMq_a0Am2sBMdNFrPKcYe0nEbF9evnIp94KUViOrcyX5xN1T3p5zwbsGJKANTEDNR8JTdJ7FHIJNazqLZOp9SUAYW2Sb61YbkHg2MPG8vAx2aempLMyQuDz4K74OVuHILCrw2LDp6SuODJB4NjDxDG-C2CljJY6RwcOhqtPJG1vnGA3IPxuYf55fBFpkWpFjSXWKK824xA9tVWkDwdDpqKgvQebZwMwzJuFLmZ2UbpBkzdvBBlXI5OT175K8a0Da2cC089xyeFTBZmCQHaOroC2WJJjEhqPt3RzfArlnA3PPwM4R8TpxlgnEZqyiW0eu3wlzo0DTrLUFGWgLM1AzRuhjEZdovJQM68YHapMkpNEwDVReb2yA7LOF2WfSb80IkKVbkds7WclrzQ4StF3RtHXyrgUJaAsTUBd8JvaUZEMkXoXkm-T4MwrXy1VThIBEtIWJKM0qER3H8ogITdjIVyG0glL2gOiZrrUgJW1hShobtBKvBLfBFVmCzs4wmatrzhoKu8lVsQ39rgV5actQiDoxErcEtn00JIh6dpgUmwNzjDWUkPUW5KYtzE3NMiPusWGFSHkjkx7BFdtrMAJDRxcDMtQWZqhmbRrZYQo6KwgNaVNyc9CyjZSmhR4LWua2LUhV22INqc__k2wwye7RZylJc61ZCFVl7TFpm8-1IFdti7jqpVylgeMj71dzc8ouV33lKRu96-lsOpCrdjBXvcRFQEBoqj5kjOfP37lUBbLYs8BiDy1e8-86kKF2MENdZvlBtm5JiwUXHxMj_RKyzhAVq9p77EBu2sHc1Naeu2-F49ZzjS4lO23QaGCZ86joTzqQj3YwH01biROLeSkVsfjdgUXmw_KYV6Qj7kAy2sFklDop2NmD3DG5YHMBJViekQKWPJxdJZSZ69CDdSAL7WAWSmcnyAaT7OAtbx0W2U-hWaQIaaiawXUgGe1wRamtOT6lEzPVeAQeMjqxLL1xZtlBnJ3Y-g41GrEOpKMdTEetV8MfJnRpurwSzfCohxzKzfTA25fWUYuC9LOD6WfQGDLSvgpS8rykAsAtJwls3MmpA9lnB7NP3wKT99Vw9x9lMFf2LJb9gnA3IdVQrx6knz2DfppfPqkt3Ok9QR1yLW5OMwMO3jyPCpN_qOp4e5CU9jAppQMUmou8UxeZeiRv6IbKxEi1yjFi0FCV9CAr7WFWGnYCc9WngtVIzuOBNLgX6MG19NFShfQgM-1hZurxkzyxUqcwLV-NlDKQXPAoswrVwMB6kIz2MBk1997IFW_Xxknmplp61y3vBbBEXEz_Ji331N71IA3tyzbpPY0JqTvFjRYyXgbGJqRLtbbrttCD5LNn79KHrqIssxOZpyI-dS-4gIKOTPS8EyDj7IudQz12ob79gj_APhRap18igr1joE3b14MEtIcJqNllhj2HfeI-kZSSlvYVHUnha_vUZBSQgPYwAbUjwY2XoLmTmNlsxqktRLYhZfGkyHN2AAnoABNQO0o8TnDrTFByYoNnB7fxyckA8s1BYpueFibn1-IPXaZHMafxUGx6l34AOefA4JyXiXvCeIEu1EuM5KPqcUYf66QD3ja9CgY-gMRzgInnKYNE7vTRmBBAn9FrfZiPpP8oMBoMOhjoADLQoVAdeuGf0XiQ2yzIGYycUeeVAkPVdsEAktEBJqM-fbBFPcy2Rax5zSk-80YltG4kMGtjPesAUtABpqAh-nnOKuu4ayRqClB4YZiIbtxTYwCJ6AATUa-WYkHlVLlVaiUquLBqlINcnZYC99AB5JwD0z3Us2xExRRyZUNsispbM-IJKXTVCiDPHGCe6e0sIqYZdpH2StoLEgnb3wwYQYI5Mq4jZfmmWD7kMoB7bbMUhh25GrI9ghxzhDlmTJcZ0uPJxEXeDBVJJcWSPD1xAdLLsVCluSh0z3DCk0ZkJBc5OCK7vjQ7BHYWUaO9GEFuOcLc0n0d3DuMNqe6pv14FozwtJs8SKXJeXwEGeYIM0yqobCcyInaIiTOKa1A8_xhkYzikVyUiXM01KIgzxxhnnkqMp0yNOo6fY0hCFyIWmVGoWufhlnICLLNEWabAfV3fGD6_KW-miNrQqPSpa95xfEAss1R9GaSwzol2xP5g0nmX_FN67FGkHeOMO-0nwN7f2hRYtGxmMgQJN2dQKvK9lSLNxnTMQcZQfY5wuzTVoIvceDvUdaoLjKsMADnxmCrsukaYwJZ6ASzUC__jOizfPpwIYVnVpaRkGvxteJ6VJ8TSEsn3P8zsaNGI8Vlp9dYYGXEiyc8uBBVxRsD8tMJ5qf-8bu77S5Ul6QW1ZCLWqRdQWXAOqqRCWSlE8xKrWrkPFeL4HMZBpZRgWRuDIiwczXUawIJ6cS8jnTaP6MGXI5-w1vsresXDJtInx8GXteibVtxArnoBHNR53aaYxTrRecSPlxLV1I4XHGrzAJirsSBawKp6MS8hRS8whg6JS8zkc3eNUKWWYuPyquZyk4gI52KbiJZoRAR-gjVnWlxD0TD3DqDx86V1KAgJ51gTurpN84V6B9ykiAvi5jf3pavEUwgEZ0YRDTUfcbeCZGRmrTfGk0Y7JZEw1yt2oMQdP4Al1AsE9c8TF66PhBHFdmbZtJwXMEeQbUHAef8gcLJ2uXeUfoc2pWuVeQeyxO9haaDalZ7EGvOH-C-Gs5c_mwt7pj2CR0eiL4aoHDHMm9lOvepIVvVHkSd8wdK3X7j4p1V_F3zXH-LlTzb9nqt9iAGnT_AVP_F7jgLG0JHNX-MYZndn2zTB7rag7hz_kAJt3B9YIMqjWutJeU1q7Knm9VovKo9CD3nD0hM0IJ3bCQNMaRGaOWXbFRtt1Z7EHXOH5DcV6NdifxVXvmdNU9PsuELvdUeRJ7zB0qYZ8TD0QJgchGSZqCMgsOICIrBthchIBSdP1Dmp-O93bvCHnSOnw52YXFJLlvega4qlIVWMAs1GCi9ZhQoN8xvc83NE1CTUV5xODzkNUcGykMrmIee3bbcOYqVVVZx4IpZrHAkfbQr2bYPV1WhNLRi01D_VNUpMYqHakKzEwqkmEWFiklahdLPCqaftCe5tKrmo0EcoqXyR15Hkt2vkqqAZROtKoOgvLPCLxwtX3wYhPuUfcWvRVLUhyYRu55gC_t0vBso_6xg_hkYmtHnZLXzFAlHR2xW4iFV279PUVUoBa1gChq8YRJqVeRghvD9Et-tVXh6oodkVCgNrWAaGiKeRs6hr4lIZslzWsmVapC_7Z6HZEt5BSWgVdHVo-DNd-t-3utxhBXh4Rq0XBXKOSvmdXd_tvhjdcAo1noriuCqRllnzXACDQsv_IbiNiu6yipJNspwZcDb3SSpapR31sV324kTQnBy4tb764u5sPbVwRK81RJVV46qGmWgNcxAY1mGFp-eRQP7q35dacdTirLXDjy45DXHDUpNa5iakligktFT2eprX2RyUZb1CqoXNWTi7DZGUT5C6WnN2JqPukIGy1qDLqyrEpQxW7FuyW9qJ6FGOWrN56ie00grCDkS2JR3E2nTCo4apaQ1TEkN4hVcUaGHcASPoaQmLbkozC0vuHdxdClHa5SV1sWsNOYsKgnH8lgpvMFEJvibZGQ1ykprmJW6jm1LNxOmIWI7SzmhgcxYBHCIom2lGmWoNWOD3rria1opUM3XleoLJBwKLZo01RgNSk4bmJzGWJjLzQhWF5rYpxeksZbVgyWYgF3NzL5BKWrDuA6_dK3u_N7qYIkuTGZbOt22IjsqfvUoSxumZ2u6QclpA5PT6C6TvUdvYo3i6f0KW0yUrTN4horpfYNy0Qbfpbe-eVKDGq9FYD-2fHybs6gCtiv2W1G0I6tjjtugZLSByei5Rw2_GnQ-t65zT9F7wZvFaehhG5R_Now9euclcDSk0cCQ26nPHO-TDHSteFHVz6DMtMGZ6XMba2-pnAsNGiKiXsSxxSbIL9IsM3ghoc2FuGpQUtrApNTqXYOmgRR_SG20ZNgvlPgG8kiIpp2WBqWmDU5NI_5OpGL1DfCFzj1m1KmYRMhz0pM9xVfU6aIUtYEpqu3SQVadzinHWZcUouxpdTKBYFDaYe5OKqLsLUpWW5isXjYmzQNehiOU0-XKjW6j5mDQfT_j_HhBf6trbtuiLLWFWar5doRpiOfxkOlp0q9HEQthPx96OpkWJaktTFKdQxmedjdG3WUUhXnjXGw-I8je9egKW5SytjBlDbtQWi-JKQS5Us7h-EORRwRXgyjLOihdbYuuNZ2DwGllzKmM3PJDWseeqybzfKuMwYyujYcW5a0tX2_qASV2lrmc-JPbckioQ6CKNZBcwIN_ujYbWpSrtjBXjbthx10qRcDIClbYQj6VWphIi1LWtvSyvWd132f8IUVZs7ZfeAv8fNsPTZS1RSlry3QyjRymJueIxW8NZ8_zMMxKy9UtXxquWpSutjBdpdbYPs9CwhpWJGaZRg-XKoO74ECj6BXHQIcS1A6_5uQ7ARn0eChWgqSPkDOuDHOFpwpUIB3KSTuYk9LuNC4VW2vYkqctXAoGZo-y_alLh1LTDqamQYNK3zhGqKTIUbAD0bGIRpmPh5IqokOJaAcTUS_3XGoKYl8qRrsyUkluG2J-lzznUlWkq0MpaMekoJEOxEoydv9RLFNfqfugWmRO76FCq96hJLSDSSglXW4OCczvpTBGHupiJZSiKb4mktGhRLSDiehyR9S3bUvu2otjjLhuHTUF8sfFphlGh9LQDqahl1719G5YrtniDoWJqxuZvaudSTbtS9ihtLMT2sQnbj92ulmriUX28kHnH2dU9gY6WZSAdowtfeOJsMdtUc366R1YWa6OTdpkBOsmV3vFsdGjZLSX8Du1YuJqdvvZ_Qy0AvM2ffd7lKf2ME8NXGewYsedsciBEdHrDPRR4Q5ddBGSHmWovfAFKJpvZPQdK12B4iUaPZqOHmWoPb67H_cYc4JFqMFdxWLMaEy2607Zowy1hxnqJY_4FvatSLC-oBVTRy5PJw8CIwo8C3WvOBZQXtozeGnArva87GSzr2uuJWSnDWPNiYO89Gwh9CgX7WEu6p2vnJ8Ls9BcySUqe8CSKeqhZebGPaJ6lIv2MBcNXf9y3EuN419yiyqyB8B85rbw_S9dmyo9yk17mJuSHvScUSJrk5IDuBw9R3ZqIbmBf2tB0fStR-loD9NRIhNOjPR9_Kv8cHFa5cHA6S7FYJMvFRP9AaWlA0xLjULD26cYJsgyRUjSOh3xFTNbFNj4WE_dMaD0cxC-A2X7ebjvhcBcZY0TUJRwsV8LJdOVAeWfA8w_Q_Vp9ICP0CKCbHUqc7xH0VbCgPLQAeahGRd7ojtMV-5zUSmQzCKToryD0tIBpqWEiDmKD2tZVuLGdUIKlHfNx6frYGzHarlsPaCkdIBJKU0bwTvGhIwJpZa8NZaSq8YsNKYpu6D0dIDpqd85LmXKIDRzS7wbkIaDTmKLpMdKJm8Dyk4HmJ16vvxT-5qY015f8pOpOPW8I2xIpkbrM6AMdYAZaoqQJWDqK8VjUjhVBxtDOeoAc1TTmiOsCXP8Te8kFOtJTFamB_MUsJvSr48oOR3xDfxTa3JKMQmdoJjWIy4Gy8wrUvJAVXqPEaWoI0xRYzcmLdZhyoBkoEeWwQ_oFmb1pww5kB7SMaLkdGQrR70DOXOdYUUXqPjjwZrIkSWoN-EFNaIkdZQgqYGFfbIsJ5Zo1llfMMoH5gKdrpyDEtQRJqjRu8bxokRGbyifeaTKEz3awxElrCNMWEmcJC2zjcm_nMAsK1YkHLNhNYAundmI0tYRpq32c3EBaXazK31yLkdels3OnBZ3u1fnRpSujjBd9TCzl-_dbGzIGVPRxjeXmeWN_-nslpafm6xGULI6wmSVZBkzNggwuXIBYnzfSJEK5xFFNQdKUEeYoJpfv51PLvPd4MROxNkhfRgbU5SZw7bCqZ0aP4cJZakTm6VGxUI-ZZmA8FDWLciZ2LOVZUo0hxNKVSeYqprFBo0Q6oUsUYSmD3KgUWHaVsIbMBrqzwnlpxPMTzMqC98LISD9WLO-4L8PSnQfE8pKJwYrXUKBXoyLHRWUqT7TJQZ6ME7krqCeOnRCGenEV5nak3urWXXuG4s5u0hKx5w-lXnfWJWvy4TS0Qmmo_GbgVGTF4EaNHvWAjibyti9aKlCUR46FV95CvIwGh9y9DxvRwp6TwgS5QWJLnY-oax0glmpu00X2I6isVIuHMvdo8tUsnu-Wl6M6NCNTSghneSvPBl5x7fIL3ZZ8Cp-6_ydflVXBieUpU4wS7WrVfqQXO3msVl_BuKFvBl_3jz2REy9B6nq_AE-VbWzkXM5yDhbKnbmI0FVrb_cnCyEXy1V1PHUe5Cqzh8o2eSmVJVGyIqGMumlbhS2eoLlLTjL1HuQwc4fkFYlUo2RZzVCZot3HXGiJ0zYexJqtnvrPUho5w-IbdL4wdxl8P6KNmhMEML08NewV1XvQRo7f6DUFfM0w6Pmue6xh6UNWd8fM1Nl5j4Z7AMPROP6mmME5LHzB7i1q9vnLLMeKj6UCpB47Yp3N1Yi4GkQVUUHyGLnD5QoAgwn9otlhFt2iOmJUtIAwI7dUAKwyww9OqJ6D3LX-QOlGneSaCLX1AVjJE_jDjY1zgOw-TtC9R5ksfMHSpQD8fvJa-WatHqg-HbyG8g4IH2dP1CkfqcJxkQppmPVFc6uoySNAFLctUqBGq2uULZawWz1UmzEuhZ3406GfiTuPaCHP4S27fQQjwqlqxVTsxpMIeGL61JpJZOPISszAsfX9eSUCqWpFYOmhrYjYopnUvy9pu0IWmmwzQD0-N7VFUpPK6YXwNln14yT6E6vrPYo3fliseJh7cwVPFXqo7pC-WoF89XQcqYnJ_mM8FbfnkCk8v6Whm-Cp6F6RelqxVS7EufueAMsKw_IeU0yFWq2TqRIM69LI1ChnLWCOWvQldcqXInQSEAPLWzHS8tVlrRIhxK6rlDKWsGU1fdiXCj8ig4AibYXAGWWl9kb2PyvK5SlVjBLvURAzJDIJSLFc_7Edg0IQ-hTwYUhKmb9FcpNK1y1SlBpaKnGt7pZHBp5WviCnRr-9qaK-KhRjlrj96eMBU0LjfmGuGKZ5LkNECVi_AmuqjxSo-S0liCnL0HiFqMEnkq3Jzn7eFnnQjzPBJOg6upQapSh1jBDpdx0oR3XULnn2JUhtOPN6dxrlJ7WMD095ROr8Dj1Lyts8r5kBIlKY1EHbXlzt65RHlrDPNS_K3WmX0YS8dBQJxOsjzWwI3Z2GmGDUT83e81xg1LSmkFJ_VrT2KX2a3mKIEEicqVdz2ZdjXLRupiL2tDrlHFodhHrXvKeEWy9YelkeNlGVxeDMtKa4QBAztad-tzQxF-Id-RsNuT1LETNs2kOVqN0tC5SmobNtj2S5GL3stxcAt19WL5Wtg5Zg3tZXaOEtGZ4pEaVYqElbtGMsopczNSWvg061qC8tGHoTkN32e2R7AV2lDvK5EAOo2jAp7Eg4VDhJFM3KCltSq9NWcsML9-_eWaquLoQt8G8fPGM01Iq6ooG5Z8NzD9fvmifetRW75iRIHCdMDI_4UhGKXdgBISSVwHlnQ3MO3O8Lpf0IFZCrGpyiaYIXVUDSkCb0htRph2DsyJpGGkL8PCspAFwcc94g2GprYSNNyjjbIoYJ3kjwkEiDsbTPSpGswjhZO8hqKPiDco-m6Ld-5iHFAHjsptNMeUw0ot4QoNFxzVtNjUo_Wxg-mnFha_yMMtRobX7DCMx7A0p6E4Ubdk3KPtsYPZJnJKXhHO-BCV_DTnrWFh-p7p0m1u-glw3KO1sGHrQyIUfv87LepTXH49AncqyT8RWgtr55hVHR4vSzRammwFzOONYmHFDXWRilmFny3L0oecFN0S1WpRstjDZdKWeQeMeGhIy-SN3AQlBXXRSxgsRPdmkRelnC9NPKxKCwxAaInIW6hllRslkhBchqpzT6xYloi1MRJ3RaWBTaZ2nJG8JJTvJuGhz8-8Iykdb3JHUqjvc6x3WeYZltCrjwpFTg6A2Tw6PgIesehw4WpSStjAlNawl40bpVit7rcVXAYN0RlurasbSoly0hbmo_UrQQAleBBIOlLRUA40WTznBmLjoihaUkLa4PtSnGPYM7v1etsWiwJyck-mAHXDcKHC0VaEMbFFu2jIvRbk-PlZzc2ao8nJAKQsf2tUYS7NbfDtQhtrCDDVYjZgB44zfRIYswpUIaUKYozc1s5YOJahdIUGNWzrRBZVS56-cpFLsZsxbT9Hg-9WhXLWDuWrItTZmaCwu9pB1r_UUGrwQUaf16FC-2uHqUvP9MOBY2Oxp_bM9SOkh4fOkYibToRS1K3Ih9Q9q3QvqsqdKYwUp24iDez9dE2PvUILaFe_Yv0RIyBhfoIPNm9DlhUWxKb6SnrVDSWkHk1LakpgRcF5yNAJBxg8_T9iBTOKM_UY4GPT44HcoFe1gKkotNc6Vg1lOmAEhdVY0S3eePXQjXykeE5ruiHYo_eyKt-PN2iLjsvWVFWHI0qunwiiyJFajDutQHtoxeahvbz7s9VW-65a9G53JywU8vnTsunUoCe1wNanVf8b2Hl23jStNURjmCmbXyvXdUFKR9igR7WEiStSCTogYnuY0RERyTJYUHY4R8_vlxoia3NKjZLSHyei5BvV6A_r234pBV_zKbLa3PeUX7F03FZyrR5lnz3AUtfzKT-Hg6V0lbUSXEVZpPJR0rrq8Q3uUefb8XXpjA8FxqhYcryaW6LODgMxV4Ym7oplqj7LNHmabqQoicXVYTkq8Tinh8QwtXJjWoCruURba81WjZBshOYiXiZbEnNX8O37VWbyiGEH5aA_zUfpY-IwAHaP7K7KvTKjh3pBl2dvr6UhQRtoX7dD7PX1WcPFJL9FnM3PHdXjLHj49Sj97mH7arMs5snQ-yfVHbKfAN5YWdrHhvZQe5Z890zvU40oelAFeW5dR6PvFEYTq0mYMKAEdmDeWwpdSSHhc5coS6hJozV9ZYaEqnwwo8Rz4WlDfEMVzHEMwp6RU5JBPD2knmJWnorwyoAx0gBno-Qab347DcSmX6Vejp3OwmDAnaEyDcj1d6oBy0IHPQVNrjSSVyJ2fT5BRgaVGVlLRdXt-QFnpALNSb9dqL7L55TyFuyeCjSv5m18m31GwdzKgJHRgkNDgDWBqTXvpX0UgV9ZkDalE3SoS7WDVMK4BpZ8DTD_N18IuPE-1qc8LTkYznH4wsDtshtyGbQWnRzk8oPxzgPkncQoNLr1KqoZjHSvLBo4_SdOkGB5Q-jnA9JOkCfvhMCysPXYJosuLWbpyZNOAujexfRPU7S8OKB8dYD5KDWbTelE5yBFtZ7MfE-cZKCpHFVGOEeWiI74rH_LkscpVU_IlcKEvxwwuW-dDYRcu-VKh-htRGjqy9Z_UCe4qnvZxKSiGvt6io_2IEtERJqLWJqurB3tpW9x1eIElg3SjAs3YCN3gbsUr2S8YUTY6wmzUa04dkInKXIdOjE8Qg4RSoaieq9Ajyj7H4h340xfvSDXIUE1uHJ-3E58p6XJJF3O0pmseP6I0dOTrQmnAENUfXUeSAV-J14PEEEP5x1tG0sO-RpSLjjAXdbaRUgpilzW9gtUk1868oHXVtZsyonx0LN6ht0IkxMckRm15wmFIXk7KCJ6juYZZ24iS0hG_tnR6O8Lb8iveQ4g-HEV35t_CLYQRJaIj4_6SzbzcSyu-7cenPwmBY6B59AutQGia2e490AllohPMRD2vRphwuCWqEDvP9txAZrQO6uCWqooo-oSS04mhI3WvY3jNIuWUgjk293nObySrbPq634RS0gm_x3TpW8yYCLLTaxYfmMyHOgLyNKS6qo8JZaVT8SUm853wKgfFhGB5pQeCTkmIMJ4ONUqwCWWnE8xOz4rzsJ6YOgnKTFfionPw6pL9hXr26jc1W5lQUjoxSKmZR2ivkuG7INC05BQbaMsiabmgpXdBqekEU1OiN4_e0fH5wV3DwoXBQLwHmLiucGp8XSaUoE6FN5gCx1MWQbrcMku-b2BeZ2vnHVSQrmuHZUIJ6gQTVJpn6NuxdDlkklssD8sb4KJliaEKY45wVajEJpSeTjA9de7pmOcQqItPufVsxi0M4JE4Pws81x4VnrPNHiSk8wfKd1asQuMlFjzNSvHjkLuxAhUXl6hgdysa3oZmD3LQ-QNFO26ndtaMFaIdLZ3CZmy2ZQp9yHvAUosqmL02e5B_zh-QURFTE1GhxlRSNWwiB1gEqKMDbfYg35w_IDh7j6zAvvIZvDtf5TWfqmh4sweZ5_yBAuWwYeN0fkI8NOs6RzyRotJcOGETLD1UotmDzHP-gOCu_AVwecrL8m5DfFfezAvs8lJJ3wHSzfkDEnN2y6TeWT55bcN22ngyV0_UTNybPcgw5w-UTlTtCiS0lnQ1Ldfpb--1tpK0VKIgw5w_UPZahK6wkZ5UasEg_WCAjqHm98rqT9VsFzR7kGLOHyiqMOgDQkKFaoVFBqrJOgMl3G51wZMLK3k_KpRyVjDlDFxFeik7HBGXkFdTwq8eqT0vQIop3dKizWkqlGxW7N14D9UI-JFfZzGewTJKTckVbcU3Fco7K5x3ml-_s-dq-w0v9ag9hFr5IArsTU6-YFqZbmwvuqlQKlrxN-Sp4MK_Ly8XHsI-w1ZFsfm4QPlnhd9VOuWV2II8DQwByWc8qcDvhW_HFQ0LHYrPpkLpZwXTz5cagjYlp8EZaVdlHomY5x_ahyyjM1aXquh1QHlnhe_AB08gnZoQw5dLrN5M1xPQXvPShcDGXKoqTZRzVjDnJMyCzMYCPOsKGgvUeLyYZGlQWlQo36wYt-D9xaN9BcfjBip23cSoByUGqRRTsH1ANd05aSqUdla4ZvM5WxgvA40K_6S9uMyM1RXL33yO-r9k0q6izqxRvlnDfDPg1eWjnYLKC1GDLqdCwGGWGt1FjVLOGqacSW9gqwTxGdOXu8Nm74UUCbj4BvUqtL41yj1rmHtaluNW3CR2FEXCJF15YGTLEw_bVoPXKPOsizfdo3DcbGVlRDt56oxSNo53tXq0OzXKP2vuzjsBHR5NqNDgPbrrDpkIm3Ukj3gqmbTXKPGsy_SeARsEV8Elt4wqt0jia1WYQi5VO6lNjdLQuvhOvHfNzLGnL25i87we8-SfntNZPGN6HT0sykRrWSZ6NuLynzi5hlgcRaOX9rXsxIkKvXiNEtKaQUjjap1LpeFpUWSEoNkufuzag92m6NGD1ighrcv0oGZr6zQthh3oFWYriBuXz60etgHVMFtpUDbawGyUfO3-pdYVhMFZt9VyNwo8h7M2rAhuUD7awHw0eAPaHK04fYrYuE34ADQpPZltiqpZW4Ny0QbmombRGTz3TF8OodlKbN6GTGL91Sfv9VA0YWlQJtoU6EDjcNRy_7zOznP5wgnD_1NTdKA0tIFpKE0r4XLDVn6JhEce5ygSDHMkYHriA-WkDcxJz9966GZ4aP9Z6PBvXDWMXfwV2XXVdu-3aVBK2sCUlHYuQQmp3cpKbK_lNS8Y6Ci-a6Fmi61BaWkD01L3krxvV97VV63YtGRf0jJyB2_cpup6VtOgdLRh7MfHD6o5a9B0DUVGcJ5FwWDBj28dmreWokeD3qCctIE5adhtJW5TL3QUJ-3_iNWnQm71eq7hNC3KTluYnZoj2CXhmGIfq_SQSzVJr9hzLsJlPozCQ1e-aVF62vLpafykwaobC8lqBDFY8IlI38bOQoty1BbmqJc3ItTsOg4cor1uApYVNLtMNw51vW6L0tQWpqnBcDBRmZVsylUfxrcp0eESQsbIMzrUHi1KT1uYnprRYHD2yIlgyTYmHRfZra6ncmAeLdDUvbQoP23xzfqlMk1VHfSSwRWrVPSSkqfm4N03UFaxoiy1ZShOw7f6rHxDo6X8vrj0qT5adfAiRIM6qEU5agtzVO_1m-TatZxePXXmE7BnkFu61qVXb1G-2sJ81b0D7NtzoPOv9fQf-Y8FrTbgcwjOQO81RwJKTVv84nzkZHhypVZoGy5jrxajH3IrtXo24jqUnnYS1-cDi_ruHWmhZyRbtI5Wqss7wr0mrehd6VCi2hXu68cm_4uNg4TvecZbAu7VlpqSKtEodyg37Zj606CBoC_DCPa2kQIEKktpSmDnFl09bYcy046hQDWrD2ueG1UfynYwOQb5CGP3-QG9ib3bDuWqnbAqldgF2eu3cie91lCnuu5BnGVcXTe9OpSydmXb_HawWMcgxa3ScxZyoQChZyE37JTeoTS1K1WmBuQAS1iIznOztKl8fQgaGuqmuR1KVTuYqrr3vKwWxuBlUg9GrFxFqg_avcC8TNVLgZLTDiancT-x0B6MYLGR0eCi7KN4FUZZnYFS1a5Ii2oPX6zwMUNEZM0hLUKFFCBOn4KHhpodhx7lp70EPw0c31jxvGw2Qc3XhDjd7Fu4NdujDLVnX3ai0WCriVYSDSXul4ML_QSavQHNUI_y1B7mqWaW8frUrXRzNp1lIKBqlKSbvznboxS1hynq6ct3tcm22ZS4qWnUvxIXJdMGdMtupj1KSnuYlAbXXUJrt0JrUaJbDQI7t4r2oXqUh_b41r7Zmzi60whMt3V6Kx_1gVWnNI04dcPmLj71KCPtYUZqVp125WF5IjtulqWC07R6HUkurjcy08lSg960R8loD5NRy-MjttCwDg5LBwfaqdAcs3Ua1qPMtGds83v25agM2af-uI67FDbMd79btgBEE-1AmWnP8Dn1eOunhR_XiRHEok5Q8KEoQgaUnw6Mq_dmCZp6QOjii1igpOVBqF-d5wnhLcFoiheUnw64BjWyI3Xph8VnMPILUqaCdMMTmAElpgNMTBP3n87njd3hi0hk5N2XA-XJi7yDPXXREyEoPR1geuq_cH15LTz-QddQfKAJxXwx2NZBmqYtA0pQB1xrGvKUWlYuDXx6vdUo4FqpkTwY6FQPTx9QcjrA5PQ0ZQmf-LGiYe3zYGjOsB58Rigo2WkZUCo6wFT0_Jc_4t9AGxGhyUp8QA-8CmLdh6LZyoCS0YFJRsM3aq0rpZ6SU26jBZD8QHtQtuc-u_zUtdUyoLx0wDWm3mNhVm4hop_y28aCl-RodmFJfVRcqh1QKjrg-_kUgJLO5CU2nH1rIZKRtdgE9iaXhpW5aK2mWx1RIjrCRDSuGrWfCfNsh1AJktOelM7fGJc7FNUhI0pBR5iChq8wWK-Gh2ysP7nHdt7o98omGxpm9yNKQ0eGj6nxPlhdyvmtCEg6ZOBGxk4kMpo1H4oiZYcezjGiPHRk-JguXcqJecTHcHTcWfaAXFqMQIBk3r52BWBsLzFNPi8jSkXHQirqneEb25FXrDuy11fIX3d4QVJTtYFy0RHmot40Qt8IH-4otz9OryVkL1H7ngc239DhgjyirHTEPUvJzTjniTB9F57_9q79SCCynuVhwM0WFsD-miMAZaIjvke_MCxPaenxh5KsJpLuxoxbPpdQYGIuVdUESj5HmHwGrxjbmkC34rzOtkrh1iO_6NRUY6BMdISZ6CVKzGKD8At3XUXUsyURKEjf6lIM7rqKOueWCSWkk8TOvSfN-MTnQk9K9vAtb7giZ22r6E2ZUEo6wZQ0zwHKFIsKxcfK7k-4XlRTXKCMdGJ6lgbut3jI11X8SpG2xVL38KmXKq_SCeWiU9F9pwADcxoZsVNx0oMVM0aYjYyqG3ETykUnmIs6na53ALfKTmRmn5u5zFRuAaVrH3JCGenE1Y7GFqdte47zFGQ1_SgIyyW8OSzx2GuOB5SLTszNeuv7Dy4gyEu_shuUkiWELavAJpSbTjA3tcyJTR2g2ZwEhvVyOtL0gAVQHTudStHMXpeGdEJJ6gST1IjrpCsT86OyUn1HhrMLVqZ6j0-WoDINGo8J5akTQ2MaH89aOcc0wZaoS_LWZUtVhLgJtpL6pN2DDHX-QKkG-Xzk6VSjWmvVogknT4CcqQEyilS6urDBHNPuQWY6f6B0mzq1EynkwJC3Rn21tUg9ngvtHuSl8wcEehmC1i1vbKPNFZB8ZLcy4L4kWYfD210dCpB2D3LT-QNFXMyRltJVSTFimsHE8v04lq6UtyepiZW2e5CVzh9g8rC419NSd8qR0igTQ0tOh5SiNacqTtruQU46f6BwJmu1tEthYe41CVUYWTNZ6JKCmQAYG02aagyQl84fKNpbCR67999QKK4xMrZWoMigKaTgdoKOGgOkpfMH5PeaXOQlpOZYcaeJi7r06DnaPchF5w8U5hSzBiVBYeYVOaSRlVqQYtQJC0Z6UUY2QCI6f4DtReqfu9E2pXgGl3AfBeRfdp3A6080TN3aCuWeFcNvNDygD1sFrh0MJVsK_OpCR0ygzLOCmaf_ew_bgAlVnXFzQKxRdfED67iwknqzQplnBTNPqwU5C0aDdYVMQGQMV_ME5WQWwq0ytUQDSjgrpjLUShZWW0pm8Z5dpuJN2GwODlnfu2f-2OtMGjZi2wolnxVMPsn5JfOdiAzXRMl4RseKHWnyNBOs_KKKklcoDa1gGhpzMydnEczWtdTER97O3HlIGB2rAgeftkJJaMUgoR6_jZTxpCzQEDyc4VcAMqWjuphGhVLRCqaiPrmOvde0EhONG9UiL4dzRXbzRLRCiWgFE9G0YsN6PXwXeGQM8NdSbzgPCPsYjxo__LZCGWkFM1LnXCRhIsv1arfFueI5DZSOmOIedoOjxaO0rVGKWhdebbKcfnyhIVmZpC81ZWpHDYDKDQld9UiNktQaJqmGyaTJyk4F7SL3Eet0E54d2NBtoV2ozEdVX1uj9LQucyGlSSXR1xjd48oMBL1BTErVouUmHdc22hplqzXMVoPeC4mBjKA2LNHvokuSnolcwcEmNSqxGmWrNcxWI-ZQbgvsvCrFU9z0siTYxpBBTdGLomKaW6NMtcaZqtXMRi3EnBMLclYvOU6VcM9LfYB4xxZU-b60NUpca_zekxkGsUvFZF4j6j6XMfwtPFjMmtho859ra5S61jB1DV8NtNXshM8LFLXStwPJA8LE8lpqWZS71jB3DYsCTM8xpzARQWfp4gTbzL_0wEVViR5qhtLVGqarsdRCzsh5w2T5hlc2GitczC8KGCJvfcUR06CctWE4nUabmsiBSsFZX_piB0e-ar8Lb8DxtG1Q_trA_NXMP-ZrE_dodyH4unkIqWPtOCl6WXTtYjYopW1gShuhKdFyRa5LFgcqMkWLrg65QRltAzPa2FW5xRaEak2kjjxktMZgmFjuIDzBiaIrD22DktmGoXq1D4j5Tj3E9CgifDZnOsy790AfEjbPV0FpG5TSNjClNasTEgqRg5ZizXK6CQJfFNdTd9uXcNsG5bINw0M1tHATNAiQUEen-x1MPE8jgbfAqUEd3aDstcHZazqzuNtagqPiPPu6kn1OnpGdojlxg3LYBuawbpSEXhJPGVK-q5UbJAWOAOwCRMeeVoPS2AamsX7roYz3RQ7FZjQ22S7unp71jXDYFuWwLcxhba7mWNyRubAQd80BaRyDO9YcWBFnbVHO2sKc9cw87C3xJQpoSSpHzOKLN5BLlR0HvKpUFylrUaba4relliCwZPHWWZhrHT9FlfCMOzCKKFiLctKWr2W9COHjkpBXYzIkpARRQbdalIa2MA31f_3Wdvc6ToaJfQgoP9BGdOsuhi1KPdvifX8jW7iCEMNlXVRpmLf9D8jIvDc8YM91dUrDFiWgLUxAAxfnVj9gKnpu7k3dL21blIG2RZejrATjvdBwzWk9lF_KTjQo6zxQ5tnCzPOlzzjfcbFORXlqDRmAFbOwyz3hQudk7DJDEbFC6WZbRjcdF35ShvjEg0LzkpyDYagpv0fHxdYPKpqbdCjn7Ao5p0O-zQbGmctfYbuOMVYjTQxzKq-ir-1Q7tnB3NMMAOtmpWkm4zGAkDk-mB7MQ7cqCeFgu0CouTvYdij_7Ji3ol7aFJpW7LbFWaaTuDyY1vWgS_9O98Jco9Nye7BDKWkHU1L6QthY9IzOpGU9edjDfBagUw7bVfV0KC_tYF5qFRanJvZyUZ3KisXMY9L55NSiAsNVrpxYlYNMh5LSDiall2fAWeD3uGPK5Y8EP4c39hesQaqE7eUNlIZ2MA11HD-MdcqEZrgwd2ReeAHW86XkwhryB0pEuyIienk5aJlhcvIrbVxnz1893QdOydVoxzuUhnZFm_jR9jQg8JMyQE3HCFRxeuKkSOWnyf-0Q6lpB1NTM2oiy9XmSyKDNtJhAqANDw3FHxM9VKNHuWgPc9GIEVC8mZUbyeZpyqGpvfOUMFU_iqazPcpIe-Y1KXvjwMo_PuGPTLKJjeOwbQPKRvnSHz35pUfpaA_TUd9J9MUy11uIlG-jRC9icy-XFlUdOnZQepSE9hJ3pQgkf35MLD2HIP7K9ObH1h0vLSlD1KGKgvUoF-0ZXNSJD_-Cko-CCE7xs0OFt12_UDH2GQc1U_weZad9scr0QtLTFmNixWrOrCVTISRqL6apVkWJao87n54b2QBtp0vUpRw1vr2UTcvcNMFbmtZAT3uUnvYwPTVTiMcLN351TOqyZWxmD64tCF4cU1Kpojy1L96oj5889QsKi7db8hgIZnMqrCZUsenSoyS1h0nqslDvscE9FSRig5jU_Qae7-0y1N_a_GVAienAuBB1mdMvJYRlj-yRCYqcfUmcrsynYFTRwxYIKvHHHlA2OsBsNHIAOX5dXSAy8k7LAQBd6Mq6luhA6ehQ5EeaukRI1KNXEJ-jwlGpCwwqtOcDykoHmJUGt95i98WE3g7hzTdPgcmTh2l5O1BSOsCk9AzKLRfSaI8iJxqMjd0wdu7yz4KtBC3KwQElogNMRJ264zlaQpdbRKcsmWXHUwiBjj1MyaCqGcuAMtABZqD2mxHoWy-A1Aug1_YszjeBo--HmSC26sMwoIR0gAmp995xyPxLCHYJnjqmLwWrDlXCtgaUhQ4wC414V59Cwx3ElpsSCxtWG3SLOXTVMD0ZUNI5wKQzTsaNd8FjNStTf66Bxe0ngu02q6cKHVEmOharSC-1xsomcXnxkV1kvCWvuBFloiPMRL21xUuD4tOKSplHCpYXl0TA14lq8pEcURI6MrboTRhubTxa03hjkCZ3wCvn_kHmU-HvJeDBmq7LXSPKQsciFhq_cG3azl7xxFvxaWvciVZXjKBEdISJKE0e59aEYFBqs3A1mUZmcvF8rzyrBSX964jS0BGmocHrOR5rezetr-wGhiwkkO6CkVc0eQiOKAsdcT2oq_5zDoj6tF1XjRD--VC-sEtZpKBEdGRoRkNyjZfWxQLmVztEzNxUYVByRTryESWiI0xET8nCDAr_yE0wGqJrbYjOy_MqLB3t9qIBJaJjmfdoZKOACjWumkXADoWUGjy5hq4sMqFEdIKJqNfjKzZXkwHm0aej7Ljjxt0BJ5SHTvj-vPGNR3aj3RNLUnQjaX6fvafkx1_cS0ua-MaEMtIJZqRntBXRFJs9rNQt8ugGG6oRtV8LvH9VRM0nlIpOZVfqvbtrfm2PwHg-u22FzKutDfoNT-knlIZOTH1oxCZwlZ2DmDIUm8e7Q9dNbxtMKAWdYApqf-FhvzjnrRA42pYevSIY1BnAM58KFRP5CaWgE3sr3uxPLWc4aZQRLyoQ3klqyw1zjAllnFORq6j1JoQ8iUVeB2HHSFe6xfDl0fEyoJxzEr0rnxiRXEnFhYBPqeGIjuhAuecEc093ZzFiDelsnMhc5MpbNyEwAa4wmKsnai50dXuQfc4fEHNdcY6EXsoNKZ9IYccVD5pCC4_X4xP5X-9fYuP27ub4P7_8Zf9__w9wNgcn:1vy6gE:ZA3eUAJXU0KNiF1BkpRY_HHfz2uwSyQT1KJMjmSn1c0",
+        "expire_date": "2026-03-19T11:15:46.242Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2nisungqw5ap9ixoqhz27e6q4nt3cz69",
+    "fields": {
+        "session_data": ".eJxVjMEOwiAQRP-FsyGFLcT16N1vILC7SNXQpLQn479Lkx50jvPezFuFuK0lbE2WMLG6KFCn3y5FekrdAT9ivc-a5rouU9K7og_a9G1meV0P9--gxFb6emRrJQuCB8-EZC2K9UDseXBABi2P7GHADhyiyT0M52wcJ8pJ1OcL3-k4Sg:1wA2rQ:ho7mfCWZ0mkyZRO4yez5ieR4l5qNGh-5Ia28Mve4ids",
+        "expire_date": "2026-04-21T09:36:40.139Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "evf5cppvk40jr21vuv6fxh37e2kvs1n2",
+    "fields": {
+        "session_data": ".eJztXU1z48YR_Suo3ausEj5J7NGHnOKTXZVDktqiSEjimiIVkvJm4_J_z1AigRnMADNvpgGzsU6VK2uvIFGcZs_r169f__7h8-L1-PT59VDtP69XHz59SD_cyP_tfrH8tdqe_mL1ZbF93N0ud9vjfn1_e_qS2_PfHm5_2q2qzY_nr1W-wdPi8CSezlZJUj1UZVqkxWpZLpOkrJIiXa6K1V2eLuMyWWWrIr0rxV_kZRk_iP-t0vlDnK_ulw_3lfimz9Vic_jw6Z-_v_3p83bxXIlv_I9q_fh0jP6-Oxyin8R_j8RXrqrDcr9-Oa53W_EVv-yil331sthX0df3L96cvvj0TaKb6HBc7I_R_bfocXF8qvbr7WMk_j962G02u6-nfxP_7KvVutoeD5-i5evy9fm-2t9E_3ldb3eLm-h-v1sud5v1TbRc7Pe74-EmWmxX0XH38Hob_Vg9rrenb_5VvAunb3b6q-XT7uXl9C_fdq_76LfqsTou7jfV4Tb6Wbxt_3q9u6vK-geJHx8topfFNvq6Pj6JP96vj9Hu4fzjo9ftcb2JNqffavPt9Fq-bqvVbfTLU7UVr2O1ql_e-09-f4Xvf97tfhW_5T7Kf5hFz-vt6_H0Cv623i42m2-nt2X99rNPv8fb1x_Wz8_i5ZyeWEQP1dfoeSfe0PrBn6v9b-L9Xeyf37662n7ZfRNfKP52vxbn8Hp-v1-q_UO1PL59G-kwbsWhLRfH6nG3_6ae6Yc_bv7M8xbvnPi1duuNON6n9SI6VNVKnPD_XpfiX7fraLvbrcTRyWFw-vXFt_rhYXEUJ_z4uj-GxEH9AroCoXlZ9mBov-y3l6FGiFtUqL_fdxwfm-p5t42-vK6X1U30uF9vNtXpYNenRHjTepvEGWzEV6-IMoT0o7tio_WC7AFiONfza_4rZzjHxOnXNwSDlEqUqHl7k3_bLRerXUg4vL3pVHHQZJ23bCZFGhAG519qQpHwsURjQYuCBkDY7pDzBy8kJtrn3nWFXLDGeBeInFWmERtoZBy2ixfxohcH_ZqQ4uD9I_QeEAdx3ovlU0hA1D-0KxRaFwAGL-UPvGMcnH-n7zgOtAxxX21Ov8WL-EWMSHOIy8MxUcgvzTNZ_HWXeMbJpd5cii_dfxPX_fPiuKvMEdKGnVKSDomSc83ZWYgoL8w3PnQE6hgiSir6PmOkri-ky6W5TLTE0ZSOIVFxuco7wqK5crDLxDNRSOXwVcfBxyTBoGeSBNWm70WJRFZJbMbb23vGgANXpG9VCkhaqSfqGgcXTHvlUZCCUZDCjGXNSl6wpAow1KKj_rQGcZdnmrEjBi53uT0MZLjhW2k0-efKIyEHIyFHI0E99zoumopUgxan96AFDUPiQjnPLhRxjh1rcCgf8Db2AOKjDX2vPEpmYJTM4HwhXQx9HJbCZVLcHlKeH4bG8mAymdwiaYFFRVr4cZp6qVFfKnJk0GaNPmJTKyGsISEXkmp4TDJfpGC-SOF8cWZwDMniPWYMVYeSq4PorDN7RJUv6saFd_GhX0PXGxsZiD0zGHt2hER9dbSLEAqSwpHKcitElCvDqw7hwUp8zMAbJINvkAt_1dEdU8HpOIyVWwyYEr5WmUwrGvIMi4Y8g2sRiYhoFx01iXW5WYhI7vrNpyIwlSaW1MiYEqf9MQczQ-6dGZqY0IUUbRAhfwCHSxB1xHglCU8QoeWWK46NORgbc5jRvtQXNV3RVYISVhyXD2YoRRFcfvKqNYoYi4YixrmJrruijhMtddDK8dp3RBfFeT5rqBw1nfYE9XgfC7AmLeCa9B1jatHiADrrj-xQjAUMMijhp5qQrjhCwHulgO8VLRRqsCnXpH-WIOsCJu0kuFqTTlaJ9bEowYiAlXp1AEgAQ-c7jdcLQWBYmKzmg-unqgi4WnjEx-wOi4_Znf_kR1f_1Bgb7wXGkJMgmChLSREBYXEunK48KkBEOoMRaQfSqOHopbalIrRIoYUMPqXznBaXNQN1NjNYZ2PHmW1BnqGPtq2ns0YoTyjmQoz3jGufRJpDu-LIARUZM1iRocdBq0FivFIIG2jaIZJ1SwKuFl5dtBnIj85gfrSdPbR8I5UpAzFirc8_1QWkTg9MnR-bgbzHDOY9VGTqUNLSEWMu2q4xy1pWjNgM5DtmMN8hqcBb2USSipthSeicqq3tho4cqYLOEBhy_XOqH2cg7zGDeQ-ltdYhET2jEuI7xa4Wx0pbGVXWRzvJm2QOsh1zmO2ogUSTOOpSVp5JpOy69c-RuPdipVLWYyKRWSSAGq45Pj-gOZ7oRYkcERQsB5X5ieksPUKCCdMxB1U78wDVjoQtW8WIzHhRyMJt8AEAlXpZibNeTBThc7AqncNVqXHEUIuGBjlI1_2gE-zu94QpIFDc0Nb4XG9ElCCbVRKwWX3zI3rvnUDi58pnBU6S-PbfeSj-4jsQVIgH_G8Sk55LcVIjsL2w3SFAe1VhqXA7NRZ-F-JAQapKPBCgAL6ctpoSTC4GY6iAXdV9WhLwty5gkhdisJ0qHgi_Q7p7ITLSJEIXrveHs77PVIHgoJMPyohjNHPEIZlDIrYlPNqaRSToq9pHB9xNGFX-0msGkUf_NI5BWls8QDRhdkkNUlC0cdvVzJjJSholNKY3LxAn6A2SeCpyerocyljRSHPKYT0Oj9kiXixmjJpfxLj7RX3s0vXRIekbR9MJEBUy5-Rde7LQccYpmiFSjymSBjX05Amz9oZCo2XzuQjLFiHKGx64IgUlfeIBIlxRJ5EWsGjXDVcDLhS-wQddGPvrVxwbqKlBjLsaSGff3CD6JBpVM8zKeLvb98p3wHT7YDFqZhDjbgYuZidScBCFAmlq0MaTFUOtiUUEKKMRD5D6ZulNdCKMOYBplhIHOFfFBGfmoIRGPEDo_a5LelUjHIKeB7n3u4ne9rLEYdIDyVEmM_ecU-6eRdXLUhJ_TtJVEfJp-tamXDw64xy9R3L4HjkrJmoUqQvx1E_eUIHg7NIqJ3wfpTYbx-YYNbiIcYeLpgXes2iMLgAsmkv3y0HCCROPAbS-LHBtRMd8cUe3i5p_cJnkQERW6sl-DxxEgdafBVx_GvKEDjeJVTRkycLIUE5WS4OamcS4m0lrUKPPXI84WVis3r3s_r2tvLnlCdS0IsZdK2TBpb5VyrgohqhHbl1c6X6HyFRlwH4YRn1y1Lgixp0rmnUQ-vSwcnMQSasspnpANIQpMBlpqWYo1pyFOzQrDHZNRCis5WjrxuSjgngID9aShwITtaSIcU-KRh7TkyCIWuEWhYT7ophAHwEmfW_UQCDGHQQ6kaS6iXKELUEe0NFn_yQX5hG1CIg9PALU4W-5JaFXm8TiOafVQIDIVkkCHo1NZvq5OaqImcOKGFVY2z8DPHiXYuQBYDZZAh0BjvEZ4M4Rvo67ggAm2EtJfwtEj2hgghbQEeAYnwFu8wdnN8QLhlCU1hT6FzcbKjfkoJwiLrDmonwp0ZuhxP0PtQ2T3TuhRuYfnSsIOQICBLTcGMgSvS9K-L4wlJH9nQoCVRQZ10TUqWCiiSpRdUMJqxuaIOhyzqVeK2kb3XO8LQxdienuk0zuwM6EeCDId6wNJLqwJJ3zqYP7GDqGEYwrWfmeJnfowuI7mItsGlWKrnoEO0vLDQIx09-bm2VyB1Ye4gFv_UN_A6M1CR5qZWlRQOC22q1elNcwOAMXywT1E0lC_ETUZFEXo6piKnwvg9XXFMoRcjXqo5FisY8hiVFcEYer7msvAK2xRUZVOvYzXVlLuRidMFuZxCiCiGEEoQmimgaGEgXh6rg-utpz1Nvn7Flo4hLUByLBfSB6pm-kq6DxJxxxPs9dKal-lFFzQiYcZZKgeDGB8SK21Msom6QrLqz9DI1G9COq_JWUvOoN1DMiwT0jOtgqgzv29hqXSCqZAFdHcdkbmaDOEAmBM4TByFBpfIVXGo7XCoAywnpfPGqNFK05U1wtZdLI6PdLa3JrDAsZZ4NCY8fKa4SLRVc8SUEdlXjA3zG_OXg9KFp8BOGKatu-SOc0Ye5m-rATzPAE2AcTDxBWJxJUbdsCjLeB2L1EaXGWXo4APPqjSYaiiwxGFwp3eQadna4RxBpMh5aYY7NUJjH8B3Z4aTAT1HkqwZ2nOrnNHunudsyJDVeGUzeK8MsbLKY2EtSPKsH9qHqRRl2NyNoKkiLV1gPBiQyF-8YFFmwq1QytTjK4OtHleHJiGGSnm6Vt7rsActrb3JIc5a9yf1-RTgG_7jVEob6ydMxDdPy-ZkNcNFg5iifycDzRiDXVaFBEeXQiLEdU4T4H2A4JH4keLxVWDip4xQNhkz_dm2SpcgbF4I_CYPmXIFxyRYHqKgpYV-F4cVBLuc8HTqW40i-Nqaq5kwJFmIX_tLDEWeluhq0dHBT7QfunPoB1Xkak6LWFg0mvvUC5zQLX-CsJoRtjKF0yEqm_wxAxnDEUjgHvlXG5QWYotznD58TMy0F7tP9bOjuiNqwLIjgNgMKnZcbIkShBvWgS3Iumby-HFjvGyUK6YKFe0WGqKgLmDFlFDopDcNcSI8HlFjIE3LjFxQaxrSAOEyb8-BytXuYhPnjNutFmm7kKUSmwiFXj575nVEGWPtiUCwZBXUwS3MWkR71Vk1wqLh2d7fJzwvOBpryYrjmKQOYBW6k7dhI3TZMxRpP9VxGjDRM2GQJlO3F_G204oFb2yiT4KIud4P2hHnQ3F95ijs4KzeFZIa0QNXz0zWXHaNY2mNFRnQVCKg0u8YFqLHC3I11HYfbmV3DakPaYrhrflr-2184eLjOFJdpLL-FeummaUD5_eRRkjN3jzlLN1tHjcyBMNN4lihTLAKQoWwxcmG05AkgygS0GgI6HzAngEcAlD6R3YJ9DPODve9Y9-mHECwTTxjbfs6DxjwC4wGP-OI3BW0I84B0ddh7SJKQYw2IZHiM0BYa_uIJNLolBXko84K_VNC0Xlu-TEdWa9fkMvTOUl14zjUEWQjwQWos6bpclZizdilKkwWG8Wjz8uXlxl2kM9sDEA8HMdscW0ZYl1pj-N87yb43P9DLG4nO_gDOp4oFg7YUOTM0e_yRjIo7iC1ybE-jyz2VaJE3ADql4AI0Qh9pFTSRKm4xoSZRWjgym-_Tol_HZHJWi_kop7q_U5bPYp-Ihxq8OA6sAMdJix76XudU0QdFsAqPZ7svG6MymsNRjzJf4EelesJXJnuMU9eRKcU-ujhkjJbEM1m9z0Qo7x0X7Zph-vy1N0IomCXLXaUGPhiQZjGC1SkCxXqxajEyfYU1Q_j2B-femwO0cSRuMGbG0Zt01XCaYMX0-BPVpS3GfNunoNWGfMWkQlTA2-yXnS4VoJQ2jqiUF-7biAf-c0bG7rC3kICxXbDnDf4mZn6aDWZ2Sggow8UBQTdtj9qlIAUkYVIdSNsz000MayIY_Rf3aUtyvzWge3T-5Fu77abtKgAYd0cQaC-fPNEPZrwzv7sssVwcTZkQZhBjUYUoNWUGhkuEBiIMZFs1Q_iuD-a9uLUgX_zXijsSwe8WnWGG2JTFF_dtS3L-tfZXIXdq6MWdypaek0526_YjUUMYc_mb0zHBqhqKRDEYjhp2aevuuxX2EC5HJtmoaP_9erAcLPXKao2xHHu6t0C0HaWbYCD2nB2rwyxwIOtPGynM6zdGskeN8aVO5GKhTxbiJLjKsQ27uoiAFduC2TbzioUBrmALv4Lcwh1LHdDkB_hmQAypj5PkGX4tIZoijQCuYIryD72YHeIXO0zTGgDycNVLU1SnFXZ2kSqUPjUqT8yTSDqu_RiAchSfo2Sg7UCenFHdykjlS-VJpAmQYt2Er2IBuEiVVTNxtOJ2hd8gMn2kwh4KUQOQ5F0oGzKG74p4uVJ4UH3bhxn7N0L7bDO67mTe6t5daDLqT0UHv4xwhhu0W38cmxnSGTjLM8EkGszOPFh46BCGuXSy0OtbON0WImSabZAUzQ9mPGcx-9DXmutwbSFr7VqQKs2LBPg5sOvuoM2CKOwPq09iKCMQ4g0tApjuWtRBgDZzCZcKmz1FmbE6wO7x9uxjX9RGqCF3X9KG9WyVEvKYqGekJUT_JFPeTvGSFGpXY-nAUswv9OxGcXQPJ2nBcZhZQj7AU9whrqpdekGEuZmhSh80rKBRuhBQzjHIHOt8yh-dbDLs-LWx6-DoVsh2fVDw6i10qKeooluKOYrIH9aX31ptDaDSmVsrUefmWUTHoJUznoTItUca0hBnTnnRwCRG1aUvMm9quEnQLgtw1a98FE2VPS5Q9LWH2tGf8TXOoI2M1qENDLj4nPKuQ3YE1iXggWAsm3xo2fToBxnAUgyG2UWTadB54I7sDs4Z4IJz3aiUPGZBQW5-7sl9gElGzwHTd0LM7sDoRDwS4HMugs1eMPspOcSRvECnQufhEZTFYp4gH_LbB9myZV6fgCO6Tvn2wYQvmfUbgmNwgqEdlhntUSrhTZzKGG2eyIk-kZdLIvKY_x5TFKKqIYVQh29fWQ29Gl3wqKGElMJz5cDUEvJgLLvghBplw8UBwZ0QKDfWKoBPxEDVGVBjpc0mwUu1kqFtghrsFGg-_Z6UOxVpGW2JwF3RRLNLhoRjPEhRBJvie1_o-6NdemBVcFN5eFl8FuEPW5jJDlFs8_L0y1B8ww_0Be9ogjRuHbEJLiTItw654E1XRgePms9ywZgoqQcUDQf3TNntlbZ0RaLgcmqkog0XXROOh5spQ757Mw7tHOvl2cdoiK8JRh11H7tZfV_KFF0_BA29koMJTPOBbiRgn1Yw8JgHG6C9FABONltGbN4fJBFeg3k0Z7t3U3S-VI0QbUCNIDtRNU5WX9h1R45Ip0MokgyuT_g2w3XiUrPcxxBZY-XgD6lc2PRDUfyfz8N-5dMF6UaZJwhcu2Lr0HwZSd_pL-ViotrIcvV9y-H6pJ0V6ZHwG0EHQKesHHYFKPm_kwaRjlqP3Sw7fL3Xe6FPhNE4Jcp4fMGUAYNQUGahTgr6K54pjAu2i5gFd1HNt2ukVSRkSNiTqWKTKLkz-CYJVRKDKmxyfC9B2Pzp7u6l00RirHwk2yHqwoWzcVjLU1y0L8nVTCxYdd8gebwR4w95igyoVI-7Ajd6Y4I0CZb4KmPmS2M16v_AlVbTmVmmyhu1acYagck7wGlPlkyEKVJVT4P4ql8-9m2vb8PvpR3ZrY8J9os5cWZAzlx1WmBvwNJnCLtuigBYhjXg-GQT17spw767OHdKNHY_SSTvVD0Ov50N2e0oowqeZVte41xwF6D3i4dPV9E37gaY8O7IdbbVWONpUlX-Tm2rPUH-uDPfn6qO2OtymKawf6V2WQv2mmTg_ZnMUdcxh1NGyaqsVwTVtcalO5Pw89PXhLgeW0KPcTJuYJhx1vMhwx4v6nPURVT0miELBIuTDHZRkXRXOXHGJhhLtk5VBO7QMMFKJBJLuul2b5ZwT1GPEw4BNNx11Pslw55P3voeJmBpiXqhvmtB5F0WLkpr0rBDqc5LhPicmPaa1pqCz_rWVFc5zInQlBav5oRKdBShxX7WOdb1W2bcE3ocGlO5xYjjekH2L16D0_vfNe5Sst6vqvx8-JX_8H7cCKfI:1wA8xa:A7KDHUjT5aeL4S6agjZwcs-e-I6Xf2ZqqVJNdLRU0Y0",
+        "expire_date": "2026-04-21T16:07:26.876Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zmx0xljz5cqw1exsjg31io9b3x0eqak7",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHAAGVcuvcbyPCSqoGktCvjv2uTLnR7zzn3xTxta_XbyIufEzszyU6_W6D4yG0H6U7t1nnsbV3mwHeFH3Twa0_5eTncv4NKo37raAQGFzQUACCNIDGILBRoJ5yloiZU0gWZsFibCa1VSUhjLGQSOCn2_gC4CTaE:1vwc2w:kBZ61AtXsSsKXzVFtXNSiEidE6BUP-wu5qTpy6BDdiQ",
+        "expire_date": "2026-03-15T08:21:02.888Z"
+    }
+},
+{
+    "model": "user_module.userprofile",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "age": 24,
+        "gender": "male",
+        "height": 178.0,
+        "weight": 80.0,
+        "goal": "muscle_gain",
+        "activity_level": "high"
+    }
+},
+{
+    "model": "user_module.userprofile",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "age": 24,
+        "gender": "male",
+        "height": 178.0,
+        "weight": 85.0,
+        "goal": "weight_loss",
+        "activity_level": "moderate"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "i want fat loss diet plan?",
+        "is_ai": false,
+        "timestamp": "2026-03-01T09:37:53.079Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "i want fat loss diet plan?",
+        "is_ai": false,
+        "timestamp": "2026-03-01T09:45:22.548Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "i want fat loss diet plan?",
+        "is_ai": false,
+        "timestamp": "2026-03-01T09:50:56.020Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "i want fat loss diet plan?",
+        "is_ai": false,
+        "timestamp": "2026-03-01T09:56:43.603Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "i want fat loss diet plan?",
+        "is_ai": false,
+        "timestamp": "2026-03-01T10:06:24.755Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "That's a great goal! While your main goal is muscle gain, improving body composition by reducing fat can definitely enhance the look of your new muscle.\n\nFor muscle gain, your diet should focus on:\n\n1.  **Protein:** Aim for 0.7-1 gram per pound of body weight daily (chicken, fish, eggs, legumes). This is crucial for muscle repair and growth.\n2.  **Slight Calorie Surplus or Maintenance:** Don't cut calories too drastically. You need energy to build muscle. Focus on whole, unprocessed foods.\n3.  **Complex Carbs:** Fuel your workouts with oats, brown rice, sweet potatoes.\n4.  **Healthy Fats:** Include avocados, nuts, seeds for overall health and hormone production.\n\nCombine this with consistent strength training. Building muscle naturally helps your body burn more fat over time!",
+        "is_ai": true,
+        "timestamp": "2026-03-01T10:06:28.341Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "hi",
+        "is_ai": false,
+        "timestamp": "2026-03-01T10:06:48.526Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Hi there! I'm your AI fitness coach, and I'm super excited to help you on your muscle gain journey. Building strength and muscle is a fantastic goal, and with consistency, you'll see amazing progress.\n\nI'm here to provide practical fitness and nutrition advice to get you there. What's the first thing you'd like to chat about today, or would you like me to kick things off with a key tip for muscle growth? Let's get started!",
+        "is_ai": true,
+        "timestamp": "2026-03-01T10:06:50.943Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "nice to meet you",
+        "is_ai": false,
+        "timestamp": "2026-03-01T10:07:06.444Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Nice to meet you too! I'm excited to help you on your muscle gain journey. That's a fantastic goal!\n\nTo kick things off, remember two key pillars:\n1.  **Lift Heavy & Consistently:** Focus on compound exercises like squats, deadlifts, bench press, and overhead press. Aim for 3-5 sessions a week, progressively increasing the weight or reps over time.\n2.  **Fuel Your Muscles:** Prioritize protein! Aim for around 0.7-1 gram of protein per pound of body weight daily. Think lean meats, poultry, fish, eggs, and dairy. Don't forget healthy carbs and fats for energy and hormones.\n\nLet's build some serious muscle together! What's your current workout routine like?",
+        "is_ai": true,
+        "timestamp": "2026-03-01T10:07:44.524Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "can you give a fat loss workout plan?",
+        "is_ai": false,
+        "timestamp": "2026-03-01T17:26:36.690Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Great question! While a fat loss plan sounds appealing, remember your main goal is muscle gain.",
+        "is_ai": true,
+        "timestamp": "2026-03-01T17:26:45.832Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "yes",
+        "is_ai": false,
+        "timestamp": "2026-03-01T17:26:58.718Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Awesome! Let's get you started on your muscle gain journey. It's a fantastic goal, and with consistency, you'll see great results.\n\nFor building muscle, remember these three pillars:\n\n1.  **Strength Training:** Focus on progressive overload – gradually lifting heavier weights or doing more reps over time. Aim for 3-5 sessions a week, hitting major muscle groups.\n2.  **Protein Power:** Eat plenty of protein (around 1 gram per pound of body weight) to repair and build muscle. Think chicken, fish, eggs, beans, and lean meats.\n3.  **Caloric Surplus:** To gain muscle, you need to eat slightly more calories than you burn. Fuel your body with nutrient-dense foods!\n\nAnd don't forget **rest** – your muscles grow when you recover.\n\nHow familiar are you with strength training, or are you just starting out?",
+        "is_ai": true,
+        "timestamp": "2026-03-01T17:27:01.618Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "can u give proper workout plan",
+        "is_ai": false,
+        "timestamp": "2026-03-01T17:27:32.486Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Absolutely! For muscle gain, a structured approach is key.\n\nA **Push/Pull/Leg",
+        "is_ai": true,
+        "timestamp": "2026-03-01T17:27:36.088Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "push pull leg exersice?",
+        "is_ai": false,
+        "timestamp": "2026-03-01T17:28:07.246Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Fantastic choice! The Push/Pull/Legs (PPL) split is incredibly effective for muscle gain, hitting each major muscle group twice a week with ample recovery.\n\nHere’",
+        "is_ai": true,
+        "timestamp": "2026-03-01T17:28:10.842Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 19,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "give workouts of each muscle groups",
+        "is_ai": false,
+        "timestamp": "2026-03-01T17:28:44.123Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 20,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Awesome! Targeting each muscle group with effective exercises is key for muscle gain. Here are some powerful exercises",
+        "is_ai": true,
+        "timestamp": "2026-03-01T17:28:47.610Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 21,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "which are",
+        "is_ai": false,
+        "timestamp": "2026-03-01T17:29:01.602Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 22,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Great question! It sounds like you're asking about the key elements for muscle gain.\n\nTo build muscle effectively, focus on these:\n\n1.  **Strength Training:** Prioritize compound exercises like squats, deadlifts, bench presses, overhead presses, and rows. These work multiple muscle groups and stimulate growth best. Aim for 3-5 sessions per week, progressively lifting heavier over time.\n2.  **Protein Intake:** Consume enough protein – around 0.7-1 gram per pound of body weight daily – to repair and build muscle. Good sources include lean meats, poultry, fish, eggs, dairy, and legumes.\n3.  **Calorie Surplus:** Eat slightly more calories than you burn. This provides the energy your body needs to grow new muscle tissue.\n4.  **Rest:** Allow your muscles to recover and grow by getting 7-9 hours of quality sleep each night.\n\nKeep up the great work! What specific area would you like to dive into next?",
+        "is_ai": true,
+        "timestamp": "2026-03-01T17:29:05.112Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 23,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "you dont give workout plans yet",
+        "is_ai": false,
+        "timestamp": "2026-03-01T17:29:41.366Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 24,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "You're right! While I don't create full workout plans, I'm here to give you practical tips to fuel your muscle gain journey.\n\nFor building muscle, consistency in your training is key. Aim for 3-5 resistance training sessions a week, focusing on compound movements like squats, deadlifts, presses, and rows. Make sure to progressively overload – gradually increase the weight, reps, or sets over time.\n\nAnd don't forget nutrition! Prioritize protein to support muscle repair and growth. Aim for roughly 1.6-2.2 grams of protein per kilogram of body weight daily, spread across your meals.\n\nKeep up the great work! You've",
+        "is_ai": true,
+        "timestamp": "2026-03-01T17:29:44.962Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 25,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "hi",
+        "is_ai": false,
+        "timestamp": "2026-03-02T14:52:04.379Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 26,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Hey there! Fantastic to have you on board. Building muscle is an awesome goal, and I'm here to help you every step of the way!\n\nTo get started, let's focus on two key areas:\n\n1.  **Strength Training:** Aim for 3-5 sessions a week, hitting all major muscle groups. Focus on compound exercises like squats, deadlifts, presses, and rows. Remember to progressively overload by gradually increasing weight or reps.\n2.  **Protein Intake:** Muscle needs fuel to grow! Ensure you're eating enough protein – around 0.7-1 gram per pound of body weight daily. Think lean meats, chicken, fish, eggs, and plant-based options like lentils and beans.\n\nConsistency is your superpower! You've got this!",
+        "is_ai": true,
+        "timestamp": "2026-03-02T14:52:08.367Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 27,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "if i had diebetice what to do?",
+        "is_ai": false,
+        "timestamp": "2026-03-05T10:12:38.945Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 28,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "if i had diebetice what to do?",
+        "is_ai": false,
+        "timestamp": "2026-03-05T10:18:06.759Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 29,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "if i had diebetice what to do?",
+        "is_ai": false,
+        "timestamp": "2026-03-05T10:47:11.786Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 30,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "if i had diebetice what to do?",
+        "is_ai": false,
+        "timestamp": "2026-03-05T10:52:07.947Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 31,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "That's a crucial question! If you have diabetes, the **first and most important step",
+        "is_ai": true,
+        "timestamp": "2026-03-05T10:52:12.273Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 32,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "?",
+        "is_ai": false,
+        "timestamp": "2026-03-05T10:52:28.862Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 33,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Hey there! Great to have you on board for your muscle gain journey! 💪\n\nTo kick things off for building muscle, focus on two key areas:\n\n1.  **Training:** Aim for 3-5 resistance training sessions per week. Prioritize compound exercises like squats, deadlifts, bench presses, and rows. The key is **progressive overload** – gradually increasing the weight, reps, or sets over time to keep challenging your muscles.\n2.  **Nutrition:** Eat in a slight **caloric surplus** (more calories than you burn) to fuel muscle growth. Most importantly, ensure you're getting enough **protein** – roughly 0.7-1 gram per pound of body weight daily – from sources like chicken, fish, eggs, and legumes.\n\nStay consistent, and you'll see amazing progress! What's one thing you're excited to start with?",
+        "is_ai": true,
+        "timestamp": "2026-03-05T10:52:32.788Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 34,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "i want weight loss diet plan",
+        "is_ai": false,
+        "timestamp": "2026-03-05T10:52:59.316Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 35,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Hey there! I hear you're looking for a weight loss diet plan.\n\nJust to clarify",
+        "is_ai": true,
+        "timestamp": "2026-03-05T10:53:03.912Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 36,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "clarify what?",
+        "is_ai": false,
+        "timestamp": "2026-03-05T10:53:20.468Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 37,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Hey there! Great question.\n\nI meant, what specific aspect of muscle gain would you like me to clarify for you today?\n\nAre you wondering about:\n*   **Training techniques?** (e.g., reps, sets, specific exercises)\n*   **Nutrition strategies?** (e.g., protein intake, meal timing)\n*   **Recovery tips?** (e.g., sleep, rest days)\n*   **Or something else entirely?**\n\nJust let me know what's on your mind, and I'll help you get a clearer picture! Let's build some muscle!",
+        "is_ai": true,
+        "timestamp": "2026-03-05T10:53:23.893Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 38,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "if i had diebetice what to do?",
+        "is_ai": false,
+        "timestamp": "2026-03-05T11:06:04.137Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 39,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "That's a very important question to address! If you have diabetes, the **first and most crucial step is to consult your doctor or a healthcare professional.** They can provide a personalized management plan tailored to your specific condition.\n\nAs a fitness coach, I can offer general, evidence-based advice that often complements medical care:\n\n1.  **Diet:** Focus on a balanced diet rich in whole foods, lean proteins, healthy fats, and high-fiber carbohydrates. Pay attention to portion sizes and consistent meal times. Managing carbohydrate intake and choosing complex carbs can help stabilize blood sugar.\n2.  **Exercise:** Regular physical activity is incredibly beneficial. Aim for a mix of:\n    *   **Aerobic exercise** (e.g., brisk walking, cycling) for at least 150 minutes per week.\n    *   **Resistance training** (which is also great for muscle gain!) 2-3 times per week. This improves insulin sensitivity.\n\nAlways monitor your blood sugar levels as advised by your doctor, especially around exercise. Your healthcare team is your best resource!",
+        "is_ai": true,
+        "timestamp": "2026-03-05T11:06:08.760Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 40,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "i want weight loss diet plan",
+        "is_ai": false,
+        "timestamp": "2026-03-05T11:06:36.771Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 41,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Hey there! I hear you're looking for a weight loss diet plan.\n\nWhile your",
+        "is_ai": true,
+        "timestamp": "2026-03-05T11:06:41.330Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 42,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "?",
+        "is_ai": false,
+        "timestamp": "2026-03-05T11:06:55.435Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 43,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Hey there! I hear you're looking for a weight loss diet plan. It's definitely",
+        "is_ai": true,
+        "timestamp": "2026-03-05T11:06:59.757Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 44,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "i want weight loss diet plan",
+        "is_ai": false,
+        "timestamp": "2026-03-05T11:12:04.118Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 45,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Hey there! I hear you're looking for a weight loss diet plan.\n\nIt's great you're thinking about nutrition! While your main goal is muscle gain, focusing on a healthy, balanced diet is crucial for both.\n\nFor **muscle gain**, the goal isn't always aggressive weight loss, but rather building lean mass, which often involves being in a slight caloric surplus with adequate protein. If you're looking to improve body composition (lose fat while gaining muscle), we can certainly discuss strategies for that!\n\nWould you like me to help you craft a nutrition approach that supports both building muscle and managing your body fat, rather than a strict weight loss plan? Let me know!",
+        "is_ai": true,
+        "timestamp": "2026-03-05T11:12:07.980Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 46,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "strict diet plan for weight loss",
+        "is_ai": false,
+        "timestamp": "2026-03-05T11:12:44.263Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 47,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "I understand you're looking for a strict diet plan for weight loss! It's important to know that very strict, aggressive weight loss diets can sometimes make it challenging to build muscle, which is your main goal.\n\nFor sustainable fat loss that supports muscle gain, we generally recommend a more balanced approach:\n*   **Moderate calorie deficit:** Enough to lose fat without sacrificing muscle.\n*   **High protein intake:** Crucial for muscle preservation and growth.\n*   **Focus on whole, unprocessed foods.**\n*   **Continue strength training:** To signal your body to retain muscle.\n\nThis strategy helps you lose fat while still supporting your muscle-building efforts. Would you like to explore how to create a nutrition approach that balances fat loss with your muscle-building goals?",
+        "is_ai": true,
+        "timestamp": "2026-03-05T11:12:51.830Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 48,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "yes",
+        "is_ai": false,
+        "timestamp": "2026-03-05T11:13:26.483Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 49,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Excellent! Balancing fat loss with muscle gain is a smart and effective way to improve your body composition. Here's a practical, evidence-based approach to your nutrition:\n\n1.  **Calculate a Moderate Calorie Deficit:** Aim for a deficit of 300-500 calories below your maintenance level. This allows for fat loss while still providing enough energy to support muscle building and recovery.\n2.  **Prioritize Protein Intake:** This is crucial! Consume 1.6-2.2 grams of protein per kilogram (or 0.7-1 gram per pound) of your target body weight daily. Protein helps preserve muscle during fat loss and supports new muscle growth.\n3.  **Smart Carb & Fat Choices:** Include complex carbohydrates (like oats, brown rice, sweet potatoes) to fuel your workouts and healthy fats (avocado, nuts, olive oil) for hormone function and satiety.\n4.  **Focus on Whole Foods:** Base your meals on lean proteins, plenty of vegetables, fruits, and whole grains. These are nutrient-dense and help you feel full.\n\nCombine this with your consistent strength training, and you'll be optimizing for both fat loss and muscle gain!",
+        "is_ai": true,
+        "timestamp": "2026-03-05T11:13:31.689Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 50,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "hii",
+        "is_ai": false,
+        "timestamp": "2026-03-05T11:15:53.733Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 51,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Hey there!\n\nGreat to hear from you again. We were just discussing how to balance fat loss with muscle gain through a smart nutrition approach.\n\nDo you have any questions about that plan, or is there anything else I can help you with today to support your muscle-building journey?",
+        "is_ai": true,
+        "timestamp": "2026-03-05T11:15:57.330Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 52,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "i am a high blood pressure patient",
+        "is_ai": false,
+        "timestamp": "2026-03-05T11:16:36.659Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 53,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "Thanks for sharing this important information. Managing high blood pressure is a top priority!\n\nBefore making any significant changes to your diet or exercise routine, it's **absolutely crucial to consult with your doctor or a registered dietitian.** They can provide personalized advice based on your specific health needs and medication.\n\nHowever, I can offer some general, evidence-based nutritional strategies that are often beneficial for managing blood pressure, and can still support your muscle gain goals once cleared by your medical professional:\n\n*   **Reduce Sodium:** Limit processed foods, canned items, and added salt.\n*   **Increase Potassium:** Focus on fruits, vegetables, and whole grains.\n*   **DASH Diet Principles:** Emphasize lean proteins, healthy fats, and low-fat dairy.\n\nYour doctor can help you create a safe and effective plan. We can then work together to integrate these guidelines into your muscle-building journey!",
+        "is_ai": true,
+        "timestamp": "2026-03-05T11:16:43.005Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 54,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "thanks for your advice",
+        "is_ai": false,
+        "timestamp": "2026-03-05T11:17:43.898Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 55,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "message": "You're very welcome! I'm glad I could help.\n\nRemember, your health is the priority, so always consult your doctor regarding your high blood pressure before making significant changes.\n\nOnce you've had that conversation, I'm here to help you integrate their advice into a safe and effective plan that still supports your muscle gain goals. Just let me know how I can assist you next!",
+        "is_ai": true,
+        "timestamp": "2026-03-05T11:17:47.367Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 56,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "message": "hi",
+        "is_ai": false,
+        "timestamp": "2026-04-06T13:48:44.459Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 57,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "message": "Hi there! I'm your AI fitness coach, ready to help you on your weight loss journey and with any questions you have about fitness, nutrition, or exercise.\n\nWhat's on your mind today? I'm here to provide practical, evidence-based advice to help you reach your goals!",
+        "is_ai": true,
+        "timestamp": "2026-04-06T13:48:47.424Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 58,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "message": "i need some suggetions for weight loss",
+        "is_ai": false,
+        "timestamp": "2026-04-06T13:49:13.924Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 59,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "message": "Fantastic! To kickstart your weight loss journey, let's focus on a few key, evidence-based areas:\n\n1.  **Calorie Deficit:** The foundation of weight loss is consuming slightly fewer calories than you burn. Focus on nutrient-dense foods like lean proteins, fruits, vegetables, and whole grains to feel full and nourished.\n2.  **Increase Protein & Fiber:** These help with satiety, reducing overall calorie intake. Think chicken, fish, beans, lentils, and plenty of veggies.\n3.  **Move Your Body:** Aim for a mix of cardiovascular exercise (like brisk walking or jogging) to burn calories, and strength training (bodyweight or weights) to build muscle, which boosts your metabolism.\n4.  **Hydration & Sleep:** Drink plenty of water and prioritize 7-9 hours of quality sleep. Both are crucial for metabolic function and managing cravings.\n\nStart with small, consistent changes! Which of these areas feels most achievable for you to begin with?",
+        "is_ai": true,
+        "timestamp": "2026-04-06T13:49:18.499Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 60,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "message": "i need some suggetions for weight loss",
+        "is_ai": false,
+        "timestamp": "2026-04-07T13:15:43.508Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 61,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "message": "It sounds like you're really eager for more weight loss tips, which is great! I just shared some core suggestions in our last chat, focusing on:\n\n1.  **Calorie Deficit**\n2.  **Increased Protein & Fiber**\n3.  **Regular Movement** (cardio & strength)\n4.  **Hydration & Sleep**\n\nWould you like me to elaborate on any of these specific points, or perhaps we can explore a different aspect like meal planning, dealing with cravings, or setting realistic goals? Let me know what feels most helpful right now!",
+        "is_ai": true,
+        "timestamp": "2026-04-07T13:15:46.055Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 62,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "message": "i have knee injury so say specific workout",
+        "is_ai": false,
+        "timestamp": "2026-04-07T13:16:42.102Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 63,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "message": "That's a very important consideration! Protecting your knee while still being active is key for weight loss. Always consult your doctor or physical therapist before starting any new exercise with an injury.\n\nHere are some knee-friendly workout suggestions:\n\n1.  **Low-Impact Cardio:**\n    *   **Swimming/Water Aerobics:** Fantastic full-body workout with zero impact on your joints.\n    *   **Stationary Cycling:** Adjust the seat height and resistance carefully to avoid strain.\n    *   **Rowing Machine:** Engages many muscle groups with minimal knee impact.\n\n2.  **Upper Body & Core Strength:**\n    *   **Upper Body:** Push-ups (on knees or incline), dumbbell rows, bicep curls, tricep extensions, overhead presses (seated if needed).\n    *   **Core:** Planks, bird-dog, dead bug – these build stability without loading your knees.\n\n3.  **Gentle Lower Body (if pain-free and approved):**\n    *   **Glute Bridges:** Lie on your back, bend knees, lift hips.\n    *   **Straight Leg Raises:** Lie on your back, lift one straight leg.\n\nThese exercises will help you burn calories and build muscle, supporting your weight loss goals safely. Listen to your body and stop immediately if you feel any pain!",
+        "is_ai": true,
+        "timestamp": "2026-04-07T13:16:48.435Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 64,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "message": "thank you",
+        "is_ai": false,
+        "timestamp": "2026-04-07T13:17:27.553Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 65,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "message": "You're very welcome! I'm glad I could help.\n\nRemember, consistency with these knee-friendly workouts, combined with your nutrition plan (calorie deficit, protein, fiber), will be key for your weight loss journey.\n\nIs there anything else I can assist you with today regarding your fitness, nutrition, or exercise plan? I'm here to support you!",
+        "is_ai": true,
+        "timestamp": "2026-04-07T13:17:29.382Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 66,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "message": "can you suggest some workouts for legs",
+        "is_ai": false,
+        "timestamp": "2026-04-07T13:27:45.537Z"
+    }
+},
+{
+    "model": "user_module.chatmessage",
+    "pk": 67,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "message": "Absolutely! Given your knee injury, it's crucial to select leg workouts that strengthen the muscles around your knee and in your lower body without putting undue stress on the joint. As always, please **consult your doctor or physical therapist before trying any new exercise, especially with an injury, and stop immediately if you feel any pain.**\n\nHere are some knee-friendly leg workout suggestions:\n\n1.  **Glute Bridges:**\n    *   **How to:** Lie on your back with your knees bent, feet flat on the floor hip-width apart, and arms by your sides. Engage your glutes and core, then lift your hips off the floor until your body forms a straight line from your shoulders to your knees. Hold briefly, then slowly lower.\n    *   **Why it's good:** This exercise primarily targets your glutes and hamstrings, which are crucial for knee stability, without direct impact on the knee joint.\n\n2.  **Straight Leg Raises (Supine):**\n    *   **How to:** Lie on your back with one leg bent (foot flat on the floor) and the other leg extended straight. Keeping the extended leg straight and your core engaged, slowly lift it a few inches off the ground, hold for a second, and then slowly lower it back down.\n    *   **Why it's good:** Excellent for strengthening the quadriceps (thigh muscles) and hip flexors without bending the knee, making it very gentle.\n\n3.  **Wall Slides/Mini Squats (Partial Range):**\n    *   **How to:** Stand with your back against a wall, feet shoulder-width apart and a little way out from the wall. Slowly slide down the wall, bending your knees only slightly (e.g., to a 30-45 degree angle, not a full squat) and keeping your back flat against the wall. Hold for a few seconds, then slide back up.\n    *   **Why it's good:** This allows you to work your quads and glutes with the support of the wall, controlling the depth and reducing strain on the knees. Only go as deep as you can without any pain.\n\n4.  **Clamshells (with or without a resistance band):**\n    *   **How to:** Lie on your side with your knees bent at a 45-degree angle and stacked on top of each other. Keep your feet together and your hips stable. Slowly lift your top knee towards the ceiling, rotating from the hip, like a clamshell opening. Lower with control.\n    *   **Why it's good:** Targets the hip abductors and glute medius, which are vital for hip and knee stability, often neglected, and very gentle on the knees.\n\n5.  **Hamstring Curls (Seated or Standing with Resistance Band):**\n    *   **How to:**\n        *   **Seated:** Sit upright. Loop a resistance band around your ankle and anchor the other end. Slowly pull your heel towards your glutes, bending your knee, then release.\n        *   **Standing:** Stand tall, holding onto a chair for balance. Loop a resistance band around one ankle and anchor the other end. Slowly bend one knee, pulling your heel towards your glutes.\n    *   **Why it's good:** Directly strengthens the hamstrings, which complement quad strength for knee health, without heavy impact.\n\n6.  **Calf Raises (Seated or Standing):**\n    *   **How to:** Stand tall (or sit in a chair), feet hip-width apart. Slowly lift your heels off the ground, coming up onto the balls of your feet. Hold at the top, then slowly lower.\n    *   **Why it's good:** Strengthens the calf muscles, which play a role in lower leg stability, with minimal knee movement.\n\nRemember to perform these exercises with controlled movements, focusing on good form rather than speed or weight. Start with 2-3 sets of 10-15 repetitions for each exercise, and gradually increase as you get stronger and your knee allows.\n\nCombining these specific leg exercises with your low-impact cardio and upper body/core work, along with your calorie deficit, will keep you on track for your weight loss goals safely and effectively!",
+        "is_ai": true,
+        "timestamp": "2026-04-07T13:27:54.433Z"
+    }
+},
+{
+    "model": "user_module.generatedworkout",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "day_number": 1,
+        "workout_type": "push",
+        "exercise_difficulty": 1,
+        "exercise": "[{\"name\": \"shoulder press (machine)\", \"sets\": 3, \"reps\": 13, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"beginner\", \"video_url\": \"https://www.youtube.com/watch?v=B-aVuyhvLHU\"}, {\"name\": \"shoulder press (machine)\", \"sets\": 3, \"reps\": 12, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"beginner\", \"video_url\": \"https://www.youtube.com/watch?v=B-aVuyhvLHU\"}, {\"name\": \"bench press (machine)\", \"sets\": 3, \"reps\": 13, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"beginner\", \"video_url\": \"https://www.youtube.com/watch?v=4Y2ZdHCOXok\"}]"
+    }
+},
+{
+    "model": "user_module.generatedworkout",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "day_number": 2,
+        "workout_type": "legs",
+        "exercise_difficulty": 3,
+        "exercise": "[{\"name\": \"barbell squats\", \"sets\": 3, \"reps\": 12, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"advanced\", \"video_url\": \"https://www.youtube.com/watch?v=-bJIpOq-LWk&pp=ygUNYmFyYmVsbCBzcXVhdNIHCQm-CgGHKiGM7w%3D%3D\"}, {\"name\": \"lunges\", \"sets\": 3, \"reps\": 12, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"advanced\", \"video_url\": \"\"}, {\"name\": \"leg curls\", \"sets\": 3, \"reps\": 14, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"advanced\", \"video_url\": \"https://www.youtube.com/watch?v=t9sTSr-JYSs&pp=ygUIbGVnIGN1cmw%3D\"}]"
+    }
+},
+{
+    "model": "user_module.generatedworkout",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "day_number": 3,
+        "workout_type": "legs",
+        "exercise_difficulty": 3,
+        "exercise": "[{\"name\": \"barbell squats\", \"sets\": 3, \"reps\": 12, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"advanced\", \"video_url\": \"https://www.youtube.com/watch?v=-bJIpOq-LWk&pp=ygUNYmFyYmVsbCBzcXVhdNIHCQm-CgGHKiGM7w%3D%3D\"}, {\"name\": \"barbell squats\", \"sets\": 3, \"reps\": 12, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"advanced\", \"video_url\": \"https://www.youtube.com/watch?v=-bJIpOq-LWk&pp=ygUNYmFyYmVsbCBzcXVhdNIHCQm-CgGHKiGM7w%3D%3D\"}, {\"name\": \"lunges\", \"sets\": 3, \"reps\": 14, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"advanced\", \"video_url\": \"\"}]"
+    }
+},
+{
+    "model": "user_module.generatedworkout",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "day_number": 4,
+        "workout_type": "pull",
+        "exercise_difficulty": 2,
+        "exercise": "[{\"name\": \"barbell rows\", \"sets\": 3, \"reps\": 14, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"intermediate\", \"video_url\": \"\"}, {\"name\": \"chin-ups\", \"sets\": 3, \"reps\": 12, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"intermediate\", \"video_url\": \"\"}, {\"name\": \"barbell rows\", \"sets\": 3, \"reps\": 14, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"intermediate\", \"video_url\": \"\"}]"
+    }
+},
+{
+    "model": "user_module.generatedworkout",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "day_number": 5,
+        "workout_type": "push",
+        "exercise_difficulty": 3,
+        "exercise": "[{\"name\": \"dips\", \"sets\": 3, \"reps\": 13, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"advanced\", \"video_url\": \"https://www.youtube.com/watch?v=0326dy_-CzM&pp=ygUEZGlwcw%3D%3D\"}, {\"name\": \"dumbbell press\", \"sets\": 3, \"reps\": 12, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"advanced\", \"video_url\": \"\"}, {\"name\": \"bench press (barbell)\", \"sets\": 3, \"reps\": 13, \"category\": \"\", \"duration\": \"\", \"difficulty\": \"advanced\", \"video_url\": \"https://www.youtube.com/watch?v=lWFknlOTbyM&pp=ygULYmVuY2ggcHJlc3M%3D\"}]"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-01T17:32:20.724Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-01T17:47:18.175Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:28:30.651Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: greek yogurt, honey, chicken thighs, olive oil, and avocado. Begin by washing and chopping your vegetables. Sauté greek yogurt in a pan with a bit of honey until lightly browned. Then, add chicken thighs and olive oil and cook for 5-7 minutes. Finally, stir in avocado and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "greek yogurt, honey, chicken thighs, olive oil, avocado",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:28:39.768Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: oats, cheddar cheese, greek yogurt, cream cheese, and granola. Begin by washing and chopping your vegetables. Sauté oats in a pan with a bit of cheddar cheese until lightly browned. Then, add greek yogurt and cream cheese and cook for 5-7 minutes. Finally, stir in granola and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "oats, cheddar cheese, greek yogurt, cream cheese, granola",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:28:47.793Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:28:51.191Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:28:53.709Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: greek yogurt, honey, chicken thighs, olive oil, and avocado. Begin by washing and chopping your vegetables. Sauté greek yogurt in a pan with a bit of honey until lightly browned. Then, add chicken thighs and olive oil and cook for 5-7 minutes. Finally, stir in avocado and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "greek yogurt, honey, chicken thighs, olive oil, avocado",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:29:16.302Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: oats, cheddar cheese, greek yogurt, cream cheese, and granola. Begin by washing and chopping your vegetables. Sauté oats in a pan with a bit of cheddar cheese until lightly browned. Then, add greek yogurt and cream cheese and cook for 5-7 minutes. Finally, stir in granola and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "oats, cheddar cheese, greek yogurt, cream cheese, granola",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:29:55.250Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:30:03.578Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 11,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:30:11.221Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 12,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:30:14.138Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 13,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:30:15.902Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 14,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: greek yogurt, honey, chicken thighs, olive oil, and avocado. Begin by washing and chopping your vegetables. Sauté greek yogurt in a pan with a bit of honey until lightly browned. Then, add chicken thighs and olive oil and cook for 5-7 minutes. Finally, stir in avocado and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "greek yogurt, honey, chicken thighs, olive oil, avocado",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:30:17.674Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 15,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:30:20.446Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 16,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:30:22.314Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 17,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: greek yogurt, honey, chicken thighs, olive oil, and avocado. Begin by washing and chopping your vegetables. Sauté greek yogurt in a pan with a bit of honey until lightly browned. Then, add chicken thighs and olive oil and cook for 5-7 minutes. Finally, stir in avocado and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "greek yogurt, honey, chicken thighs, olive oil, avocado",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:30:24.511Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 18,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: oats, cheddar cheese, greek yogurt, cream cheese, and granola. Begin by washing and chopping your vegetables. Sauté oats in a pan with a bit of cheddar cheese until lightly browned. Then, add greek yogurt and cream cheese and cook for 5-7 minutes. Finally, stir in granola and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "oats, cheddar cheese, greek yogurt, cream cheese, granola",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:30:27.674Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 19,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:30:29.555Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 20,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: greek yogurt, honey, chicken thighs, olive oil, and avocado. Begin by washing and chopping your vegetables. Sauté greek yogurt in a pan with a bit of honey until lightly browned. Then, add chicken thighs and olive oil and cook for 5-7 minutes. Finally, stir in avocado and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "greek yogurt, honey, chicken thighs, olive oil, avocado",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:30:50.652Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 21,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:30:52.837Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 22,
+    "fields": {
+        "user": [
+            "Adithyan M"
+        ],
+        "meal_name": "Weight Gain Meal ",
+        "description": "To prepare weight gain meal , start by gathering the following ingredients: banana, white rice, boiled eggs, whole milk, and chicken thighs. Begin by washing and chopping your vegetables. Sauté banana in a pan with a bit of white rice until lightly browned. Then, add boiled eggs and whole milk and cook for 5-7 minutes. Finally, stir in chicken thighs and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight gain.",
+        "ingredients": "banana, white rice, boiled eggs, whole milk, chicken thighs",
+        "category": "Weight Gain",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-03-04T15:30:54.274Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 23,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T13:28:29.649Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 24,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T13:51:48.539Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 25,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T13:57:19.784Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 26,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: lemon juice, grilled chicken, low-fat yogurt, almonds, and tofu. Begin by washing and chopping your vegetables. Sauté lemon juice in a pan with a bit of grilled chicken until lightly browned. Then, add low-fat yogurt and almonds and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "lemon juice, grilled chicken, low-fat yogurt, almonds, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T13:57:45.876Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 27,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: tofu, grilled chicken, olive oil, lemon juice, and avocado. Begin by washing and chopping your vegetables. Sauté tofu in a pan with a bit of grilled chicken until lightly browned. Then, add olive oil and lemon juice and cook for 5-7 minutes. Finally, stir in avocado and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "tofu, grilled chicken, olive oil, lemon juice, avocado",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T13:58:01.666Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 28,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal #9, start by gathering the following ingredients: grilled chicken, cucumber, zucchini noodles, broccoli, and almonds. Begin by washing and chopping your vegetables. Sauté grilled chicken in a pan with a bit of cucumber until lightly browned. Then, add zucchini noodles and broccoli and cook for 5-7 minutes. Finally, stir in almonds and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "grilled chicken, cucumber, zucchini noodles, broccoli, almonds",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T13:58:08.956Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 29,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: lemon juice, grilled chicken, low-fat yogurt, almonds, and tofu. Begin by washing and chopping your vegetables. Sauté lemon juice in a pan with a bit of grilled chicken until lightly browned. Then, add low-fat yogurt and almonds and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "lemon juice, grilled chicken, low-fat yogurt, almonds, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "banana",
+        "recommended_on": "2026-04-07T13:58:22.833Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 30,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: tofu, grilled chicken, olive oil, lemon juice, and avocado. Begin by washing and chopping your vegetables. Sauté tofu in a pan with a bit of grilled chicken until lightly browned. Then, add olive oil and lemon juice and cook for 5-7 minutes. Finally, stir in avocado and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "tofu, grilled chicken, olive oil, lemon juice, avocado",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "banana",
+        "recommended_on": "2026-04-07T13:58:58.700Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 31,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: lemon juice, grilled chicken, low-fat yogurt, almonds, and tofu. Begin by washing and chopping your vegetables. Sauté lemon juice in a pan with a bit of grilled chicken until lightly browned. Then, add low-fat yogurt and almonds and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "lemon juice, grilled chicken, low-fat yogurt, almonds, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "eggs, chicken",
+        "excluded_ingredients": "banana",
+        "recommended_on": "2026-04-07T13:59:15.931Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 32,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T14:11:37.188Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 33,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T14:19:50.522Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 34,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: lemon juice, grilled chicken, low-fat yogurt, almonds, and tofu. Begin by washing and chopping your vegetables. Sauté lemon juice in a pan with a bit of grilled chicken until lightly browned. Then, add low-fat yogurt and almonds and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "lemon juice, grilled chicken, low-fat yogurt, almonds, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T14:20:28.353Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 35,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T14:31:23.856Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 36,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: lemon juice, grilled chicken, low-fat yogurt, almonds, and tofu. Begin by washing and chopping your vegetables. Sauté lemon juice in a pan with a bit of grilled chicken until lightly browned. Then, add low-fat yogurt and almonds and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "lemon juice, grilled chicken, low-fat yogurt, almonds, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T14:31:46.928Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 37,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: tofu, grilled chicken, olive oil, lemon juice, and avocado. Begin by washing and chopping your vegetables. Sauté tofu in a pan with a bit of grilled chicken until lightly browned. Then, add olive oil and lemon juice and cook for 5-7 minutes. Finally, stir in avocado and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "tofu, grilled chicken, olive oil, lemon juice, avocado",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T14:31:52.013Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 38,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal #9, start by gathering the following ingredients: grilled chicken, cucumber, zucchini noodles, broccoli, and almonds. Begin by washing and chopping your vegetables. Sauté grilled chicken in a pan with a bit of cucumber until lightly browned. Then, add zucchini noodles and broccoli and cook for 5-7 minutes. Finally, stir in almonds and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "grilled chicken, cucumber, zucchini noodles, broccoli, almonds",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T14:31:54.960Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 39,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: grilled chicken, bell peppers, zucchini noodles, lemon juice, and avocado. Begin by washing and chopping your vegetables. Sauté grilled chicken in a pan with a bit of bell peppers until lightly browned. Then, add zucchini noodles and lemon juice and cook for 5-7 minutes. Finally, stir in avocado and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "grilled chicken, bell peppers, zucchini noodles, lemon juice, avocado",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T14:31:57.471Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 40,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal #25",
+        "description": "To prepare weight loss meal #25, start by gathering the following ingredients: bell peppers, carrots, cucumber, cherry tomatoes, and grilled chicken. Begin by washing and chopping your vegetables. Sauté bell peppers in a pan with a bit of carrots until lightly browned. Then, add cucumber and cherry tomatoes and cook for 5-7 minutes. Finally, stir in grilled chicken and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "bell peppers, carrots, cucumber, cherry tomatoes, grilled chicken",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T14:32:02.658Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 41,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal #27",
+        "description": "To prepare weight loss meal #27, start by gathering the following ingredients: chia seeds, grilled chicken, olive oil, almonds, and cucumber. Begin by washing and chopping your vegetables. Sauté chia seeds in a pan with a bit of grilled chicken until lightly browned. Then, add olive oil and almonds and cook for 5-7 minutes. Finally, stir in cucumber and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "chia seeds, grilled chicken, olive oil, almonds, cucumber",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T14:32:06.018Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 42,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal #36",
+        "description": "To prepare weight loss meal #36, start by gathering the following ingredients: tofu, zucchini noodles, avocado, olive oil, and grilled chicken. Begin by washing and chopping your vegetables. Sauté tofu in a pan with a bit of zucchini noodles until lightly browned. Then, add avocado and olive oil and cook for 5-7 minutes. Finally, stir in grilled chicken and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "tofu, zucchini noodles, avocado, olive oil, grilled chicken",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T14:32:08.082Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 43,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal #37",
+        "description": "To prepare weight loss meal #37, start by gathering the following ingredients: spinach, grilled chicken, tofu, lemon juice, and cherry tomatoes. Begin by washing and chopping your vegetables. Sauté spinach in a pan with a bit of grilled chicken until lightly browned. Then, add tofu and lemon juice and cook for 5-7 minutes. Finally, stir in cherry tomatoes and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "spinach, grilled chicken, tofu, lemon juice, cherry tomatoes",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T14:32:10.830Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 44,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal #43",
+        "description": "To prepare weight loss meal #43, start by gathering the following ingredients: grilled chicken, tofu, almonds, chia seeds, and broccoli. Begin by washing and chopping your vegetables. Sauté grilled chicken in a pan with a bit of tofu until lightly browned. Then, add almonds and chia seeds and cook for 5-7 minutes. Finally, stir in broccoli and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "grilled chicken, tofu, almonds, chia seeds, broccoli",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T14:32:13.084Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 45,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal #46",
+        "description": "To prepare weight loss meal #46, start by gathering the following ingredients: quinoa, tofu, grilled chicken, bell peppers, and broccoli. Begin by washing and chopping your vegetables. Sauté quinoa in a pan with a bit of tofu until lightly browned. Then, add grilled chicken and bell peppers and cook for 5-7 minutes. Finally, stir in broccoli and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "quinoa, tofu, grilled chicken, bell peppers, broccoli",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T14:32:15.176Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 46,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T14:43:16.545Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 47,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T14:47:51.195Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 48,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: lemon juice, grilled chicken, low-fat yogurt, almonds, and tofu. Begin by washing and chopping your vegetables. Sauté lemon juice in a pan with a bit of grilled chicken until lightly browned. Then, add low-fat yogurt and almonds and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "lemon juice, grilled chicken, low-fat yogurt, almonds, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicke",
+        "excluded_ingredients": "rice",
+        "recommended_on": "2026-04-07T14:48:22.347Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 49,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T14:53:39.657Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 50,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T15:02:16.340Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 51,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T15:07:34.944Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 52,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T15:28:05.721Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 53,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T15:35:25.692Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 54,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T15:46:35.812Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 55,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "",
+        "excluded_ingredients": "",
+        "recommended_on": "2026-04-07T15:52:14.104Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 56,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: lemon juice, grilled chicken, low-fat yogurt, almonds, and tofu. Begin by washing and chopping your vegetables. Sauté lemon juice in a pan with a bit of grilled chicken until lightly browned. Then, add low-fat yogurt and almonds and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "lemon juice, grilled chicken, low-fat yogurt, almonds, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T15:52:22.645Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 57,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: tofu, grilled chicken, olive oil, lemon juice, and avocado. Begin by washing and chopping your vegetables. Sauté tofu in a pan with a bit of grilled chicken until lightly browned. Then, add olive oil and lemon juice and cook for 5-7 minutes. Finally, stir in avocado and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "tofu, grilled chicken, olive oil, lemon juice, avocado",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T15:52:25.894Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 58,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal #9, start by gathering the following ingredients: grilled chicken, cucumber, zucchini noodles, broccoli, and almonds. Begin by washing and chopping your vegetables. Sauté grilled chicken in a pan with a bit of cucumber until lightly browned. Then, add zucchini noodles and broccoli and cook for 5-7 minutes. Finally, stir in almonds and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "grilled chicken, cucumber, zucchini noodles, broccoli, almonds",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T15:52:30.342Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 59,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: grilled chicken, bell peppers, zucchini noodles, lemon juice, and avocado. Begin by washing and chopping your vegetables. Sauté grilled chicken in a pan with a bit of bell peppers until lightly browned. Then, add zucchini noodles and lemon juice and cook for 5-7 minutes. Finally, stir in avocado and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "grilled chicken, bell peppers, zucchini noodles, lemon juice, avocado",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T15:52:33.035Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 60,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal #25",
+        "description": "To prepare weight loss meal #25, start by gathering the following ingredients: bell peppers, carrots, cucumber, cherry tomatoes, and grilled chicken. Begin by washing and chopping your vegetables. Sauté bell peppers in a pan with a bit of carrots until lightly browned. Then, add cucumber and cherry tomatoes and cook for 5-7 minutes. Finally, stir in grilled chicken and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "bell peppers, carrots, cucumber, cherry tomatoes, grilled chicken",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T15:52:35.493Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 61,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal #27",
+        "description": "To prepare weight loss meal #27, start by gathering the following ingredients: chia seeds, grilled chicken, olive oil, almonds, and cucumber. Begin by washing and chopping your vegetables. Sauté chia seeds in a pan with a bit of grilled chicken until lightly browned. Then, add olive oil and almonds and cook for 5-7 minutes. Finally, stir in cucumber and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "chia seeds, grilled chicken, olive oil, almonds, cucumber",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T15:52:38.151Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 62,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal #36",
+        "description": "To prepare weight loss meal #36, start by gathering the following ingredients: tofu, zucchini noodles, avocado, olive oil, and grilled chicken. Begin by washing and chopping your vegetables. Sauté tofu in a pan with a bit of zucchini noodles until lightly browned. Then, add avocado and olive oil and cook for 5-7 minutes. Finally, stir in grilled chicken and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "tofu, zucchini noodles, avocado, olive oil, grilled chicken",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T15:52:40.962Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 63,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: lemon juice, grilled chicken, low-fat yogurt, almonds, and tofu. Begin by washing and chopping your vegetables. Sauté lemon juice in a pan with a bit of grilled chicken until lightly browned. Then, add low-fat yogurt and almonds and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "lemon juice, grilled chicken, low-fat yogurt, almonds, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, grilled chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T15:52:57.049Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 64,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: tofu, grilled chicken, olive oil, lemon juice, and avocado. Begin by washing and chopping your vegetables. Sauté tofu in a pan with a bit of grilled chicken until lightly browned. Then, add olive oil and lemon juice and cook for 5-7 minutes. Finally, stir in avocado and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "tofu, grilled chicken, olive oil, lemon juice, avocado",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, grilled chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T15:53:01.942Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 65,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal #9, start by gathering the following ingredients: grilled chicken, cucumber, zucchini noodles, broccoli, and almonds. Begin by washing and chopping your vegetables. Sauté grilled chicken in a pan with a bit of cucumber until lightly browned. Then, add zucchini noodles and broccoli and cook for 5-7 minutes. Finally, stir in almonds and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "grilled chicken, cucumber, zucchini noodles, broccoli, almonds",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, grilled chicken",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T16:06:02.566Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 66,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: lemon juice, grilled chicken, low-fat yogurt, almonds, and tofu. Begin by washing and chopping your vegetables. Sauté lemon juice in a pan with a bit of grilled chicken until lightly browned. Then, add low-fat yogurt and almonds and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "lemon juice, grilled chicken, low-fat yogurt, almonds, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, grilled chicken, brockoli",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T16:06:45.649Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 67,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: lemon juice, grilled chicken, low-fat yogurt, almonds, and tofu. Begin by washing and chopping your vegetables. Sauté lemon juice in a pan with a bit of grilled chicken until lightly browned. Then, add low-fat yogurt and almonds and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "lemon juice, grilled chicken, low-fat yogurt, almonds, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, grilled chicken, brockoli",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T16:06:49.127Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 68,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: lemon juice, grilled chicken, low-fat yogurt, almonds, and tofu. Begin by washing and chopping your vegetables. Sauté lemon juice in a pan with a bit of grilled chicken until lightly browned. Then, add low-fat yogurt and almonds and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "lemon juice, grilled chicken, low-fat yogurt, almonds, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, grilled chicken, brockoli",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T16:06:52.610Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 69,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: lemon juice, grilled chicken, low-fat yogurt, almonds, and tofu. Begin by washing and chopping your vegetables. Sauté lemon juice in a pan with a bit of grilled chicken until lightly browned. Then, add low-fat yogurt and almonds and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "lemon juice, grilled chicken, low-fat yogurt, almonds, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, grilled chicken, brockoli",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T16:07:01.191Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 70,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, grilled chicken, broccoli",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T16:07:11.277Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 71,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, grilled chicken, broccoli",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T16:07:17.354Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 72,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, grilled chicken, broccoli",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T16:07:18.769Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 73,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: cucumber, quinoa, broccoli, carrots, and tofu. Begin by washing and chopping your vegetables. Sauté cucumber in a pan with a bit of quinoa until lightly browned. Then, add broccoli and carrots and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "cucumber, quinoa, broccoli, carrots, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, grilled chicken, broccoli",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T16:07:20.085Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 74,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: olive oil, chia seeds, zucchini noodles, broccoli, and low-fat yogurt. Begin by washing and chopping your vegetables. Sauté olive oil in a pan with a bit of chia seeds until lightly browned. Then, add zucchini noodles and broccoli and cook for 5-7 minutes. Finally, stir in low-fat yogurt and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "olive oil, chia seeds, zucchini noodles, broccoli, low-fat yogurt",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, grilled chicken, broccoli",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T16:07:22.884Z"
+    }
+},
+{
+    "model": "user_module.foodrecommendation",
+    "pk": 75,
+    "fields": {
+        "user": [
+            "adithyan"
+        ],
+        "meal_name": "Weight Loss Meal ",
+        "description": "To prepare weight loss meal , start by gathering the following ingredients: lemon juice, grilled chicken, low-fat yogurt, almonds, and tofu. Begin by washing and chopping your vegetables. Sauté lemon juice in a pan with a bit of grilled chicken until lightly browned. Then, add low-fat yogurt and almonds and cook for 5-7 minutes. Finally, stir in tofu and simmer for a few more minutes. Serve warm and enjoy a nutritious meal perfect for weight loss.",
+        "ingredients": "lemon juice, grilled chicken, low-fat yogurt, almonds, tofu",
+        "category": "Weight Loss",
+        "included_ingredients": "egg, grilled chicken, broccoli",
+        "excluded_ingredients": "rice, wheat",
+        "recommended_on": "2026-04-07T16:07:26.867Z"
+    }
+}
+]

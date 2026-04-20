@@ -12,7 +12,6 @@ from .forms import FeedbackForm, UserProfileForm
 from .models import UserProfile, GeneratedWorkout, ChatMessage, FoodRecommendation
 from .ml.workout_model import EnhancedWorkoutClassifier
 from Fitness.rnn_model.rnn import predict_next_day, workout_to_idx, diff_to_idx
-# from ctransformers import AutoModelForCausalLM
 import torch
 import json
 import os
@@ -21,17 +20,16 @@ import logging
 import random
 import pandas as pd
 from datetime import datetime
-########################################
 import traceback
+import difflib
 from django.conf import settings
-from django.http import JsonResponse
-from django.contrib.auth.decorators import login_required
-from .models import UserProfile, ChatMessage
 from google import genai
 from google.genai import types
-from .models import UserProfile, GeneratedWorkout
-from .models import UserProfile, ChatMessage
+from fuzzywuzzy import fuzz, process   # <-- new import
 
+# ------------------------------
+# Exercise video links 
+# ------------------------------
 exercise_video_links = {
     "pushups": "https://www.youtube.com/watch?v=_l3ySVKYVJ8",
     "shoulder press (machine)": "https://www.youtube.com/watch?v=B-aVuyhvLHU",
@@ -50,41 +48,39 @@ exercise_video_links = {
     "seated row": "https://www.youtube.com/watch?v=UCXxvVItLoM&pp=ygUKc2VhdGVkIHJvdw%3D%3D",
 }
 
+# ------------------------------
+# Workout history
+# ------------------------------
 @login_required
 def workout_history(request):
     workouts = GeneratedWorkout.objects.filter(user=request.user).order_by('day_number')
     data = []
-
     for w in workouts:
         try:
             exercises = json.loads(w.exercise) if w.exercise else []
         except Exception as e:
             print(f"[DEBUG] Failed to parse JSON for day {w.day_number}: {e}")
             exercises = []
-
         data.append({
             'day_number': w.day_number,
             'workout_type': w.workout_type,
             'exercise_difficulty': w.exercise_difficulty,
             'exercise': exercises,
         })
-
-    print("[DEBUG] Returning workout history:", json.dumps(data, indent=2))
     return JsonResponse(data, safe=False)
 
+# ------------------------------
+# Exercise recommender view
+# ------------------------------
 @login_required
 def exercise_recommender(request):
     user_data = get_user_profile(request)
     return render(request, 'common/exercise_recommender.html', {'user_data': user_data})
 
-
 def get_user_profile(request):
     try:
         profile = UserProfile.objects.get(user=request.user)
-
-        # If you have bmi calculation method in model
         bmi = profile.bmi_category() if hasattr(profile, 'bmi_category') else 'N/A'
-
         return {
             "age": profile.age,
             "gender": profile.gender,
@@ -107,16 +103,14 @@ def get_user_profile(request):
             "exercise_difficulty": "N/A"
         }
 
-# Define or import these
+# ------------------------------
+# Workout generation (RNN + classifier)
+# ------------------------------
 workout_types = ['push', 'pull', 'legs', 'cardio']
 difficulty_levels = ['beginner', 'intermediate', 'advanced']
-
-# Example mappings:
 workout_to_idx = {'push': 0, 'pull': 1, 'legs': 2, 'cardio': 3}
 diff_to_idx = {'beginner': 0, 'intermediate': 1, 'advanced': 2}
 
-
-# Load model function
 def load_trained_model():
     model = WorkoutRNN(
         workout_vocab_size=len(workout_types),
@@ -129,7 +123,6 @@ def load_trained_model():
     model.eval()
     return model
 
-# Helper to parse fallback exercise string format like "Shoulder Press (Machine) - 3x13"
 def parse_exercise_string(exercise_str):
     match = re.match(r"(.+?)\s*-\s*(\d+)x(\d+)", exercise_str.strip(), re.IGNORECASE)
     if match:
@@ -149,16 +142,13 @@ def parse_exercise_string(exercise_str):
         "video_url": ""
     }
 
-
 @csrf_exempt
 @require_POST
 @login_required
 def generate_exercise(request):
-    # Load data and classifier
     data = pd.read_csv(r'Fitness/data_creation/workout_data_day1.csv')
     classifier = EnhancedWorkoutClassifier()
     classifier.fit(data)
-    
     profile = UserProfile.objects.get(user=request.user)
 
     try:
@@ -173,20 +163,8 @@ def generate_exercise(request):
     workout_types_wp = ['pull', 'legs', 'cardio']  
     difficulty_type = ['beginner', 'intermediate', 'advanced']
     difficulty_map = {'beginner': 1, 'intermediate': 2, 'advanced': 3}
-
-    # Calculate BMI
     bmi = profile.weight / ((profile.height / 100) ** 2)
-
-    # Goal mapping
-    goal_mapping = {
-        'weight loss': 0,
-        'muscle gain': 1,
-        'fitness': 2
-    }
-
-    # Default fallback
-    workout_type = None
-    difficulty_label = None
+    goal_mapping = {'weight loss': 0, 'muscle gain': 1, 'fitness': 2}
 
     if day_number == 1:
         workout_type = 'push'
@@ -195,34 +173,27 @@ def generate_exercise(request):
         workout_type = random.choice(workout_types_wp)
         difficulty_label = random.choice(difficulty_type)
     else:
-        # Day >= 3: try to use RNN model if we have at least two previous days
         prev_day1 = GeneratedWorkout.objects.filter(user=request.user, day_number=day_number-1).first()
         prev_day2 = GeneratedWorkout.objects.filter(user=request.user, day_number=day_number-2).first()
-
         if prev_day1 and prev_day2:
-            # We have both previous days, use RNN
             seq = [
                 (workout_to_idx[prev_day2.workout_type], diff_to_idx[reverse_difficulty(prev_day2.exercise_difficulty)]),
                 (workout_to_idx[prev_day1.workout_type], diff_to_idx[reverse_difficulty(prev_day1.exercise_difficulty)])
             ]
-
             extra_feat = [
                 profile.age / 100,
                 0 if profile.gender.lower() == 'male' else 1,
-                goal_mapping.get(profile.goal.lower(), 0),  # default 0 if unknown
+                goal_mapping.get(profile.goal.lower(), 0),
                 bmi / 50
             ]
-
             model = load_trained_model()
             workout_type, difficulty_label = predict_next_day(model, seq, extra_feat)
         else:
-            # Not enough history, fallback to random (like day 2)
             workout_type = random.choice(workout_types_wp)
             difficulty_label = random.choice(difficulty_type)
 
     difficulty = difficulty_map[difficulty_label]
 
-    # Generate exercises from classifier
     exercise = classifier.predict({
         'age': profile.age,
         'gender': 0 if profile.gender.lower() == 'male' else 1,
@@ -232,12 +203,10 @@ def generate_exercise(request):
         'day1_exercise_difficulty': difficulty
     })
 
-    # Build exercise list with video links
     exercise_list = []
     for key in exercise:
         if exercise[key]:
             parsed = parse_exercise_string(exercise[key])
-            # Ensure parsed contains necessary fields; add video_url
             exercise_list.append({
                 "name": parsed["name"],
                 "sets": parsed["sets"],
@@ -248,7 +217,6 @@ def generate_exercise(request):
                 "video_url": exercise_video_links.get(parsed["name"].lower(), "")
             })
 
-    # Save to database
     workout, created = GeneratedWorkout.objects.get_or_create(
         user=request.user,
         day_number=day_number,
@@ -271,19 +239,15 @@ def generate_exercise(request):
         "difficulty": difficulty_label
     })
 
-
-# Helper to reverse difficulty integer back to string
 def reverse_difficulty(value):
     reverse_map = {1: 'beginner', 2: 'intermediate', 3: 'advanced'}
     return reverse_map[value]
 
-
-# Setup logging
+# ------------------------------
+# AI Chatbot (with truncation handling)
+# ------------------------------
 logger = logging.getLogger(__name__)
-
 client = genai.Client(api_key=settings.GEMINI_API_KEY)
-
-# Updated model list based on your available models
 MODEL_CANDIDATES = [
     'models/gemini-2.5-flash',
     'models/gemini-flash-latest',
@@ -291,32 +255,39 @@ MODEL_CANDIDATES = [
     'models/gemini-pro-latest',
 ]
 
-def get_ai_response(prompt):
-    last_error = None
-    for model_name in MODEL_CANDIDATES:
+def get_ai_response(prompt, max_attempts=3):
+    full_response = ""
+    current_prompt = prompt
+    finish_reason = None
+    for attempt in range(max_attempts):
         try:
             response = client.models.generate_content(
-                model=model_name,
-                contents=prompt, 
+                model=MODEL_CANDIDATES[0],
+                contents=current_prompt,
                 config=types.GenerateContentConfig(
-                    max_output_tokens=10000,
+                    max_output_tokens=8192,
                     temperature=0.7,
                 )
             )
-            return response.text.strip()
+            candidate = response.candidates[0]
+            finish_reason = candidate.finish_reason
+            partial_text = candidate.content.parts[0].text.strip()
+            full_response += partial_text
+            if finish_reason != "MAX_TOKENS":
+                break
+            current_prompt = f"Continue exactly from where you left off. Do not repeat anything. Previous text:\n{full_response}\n\nContinue:"
         except Exception as e:
-            last_error = e
-            logger.warning(f"Model {model_name} failed: {e}")
+            logger.error(f"AI generation attempt {attempt+1} failed: {e}")
+            if attempt == max_attempts - 1:
+                raise
             continue
-    raise last_error
+    if finish_reason == "MAX_TOKENS":
+        logger.warning("AI response was truncated even after continuation attempts.")
+    return full_response.strip()
 
 def get_recent_chat_history(user, max_exchanges=5):
-    """
-    Return the last `max_exchanges` exchanges (user + AI) as a formatted string.
-    """
-    # Get the latest messages, limit to max_exchanges * 2 (each exchange has user + AI)
     messages = ChatMessage.objects.filter(user=user).order_by('-timestamp')[:max_exchanges*2]
-    messages = reversed(list(messages))  # chronological order
+    messages = reversed(list(messages))
     history_lines = []
     for msg in messages:
         role = "User" if not msg.is_ai else "Coach"
@@ -328,34 +299,22 @@ def get_recent_chat_history(user, max_exchanges=5):
 def chatbot_response(request):
     if request.method != "POST":
         return JsonResponse({"error": "Invalid method"}, status=405)
-
     try:
-        # Parse request body
-        try:
-            data = json.loads(request.body.decode("utf-8"))
-            user_message = data.get("message", "").strip()
-        except json.JSONDecodeError:
-            return JsonResponse({"error": "Invalid JSON"}, status=400)
-
+        data = json.loads(request.body.decode("utf-8"))
+        user_message = data.get("message", "").strip()
         if not user_message:
             return JsonResponse({"error": "Empty message"}, status=400)
 
-        # Get user profile
         try:
             user_profile = UserProfile.objects.get(user=request.user)
             user_goal = user_profile.goal
         except UserProfile.DoesNotExist:
             user_goal = "fitness"
 
-        # Fetch recent chat history (excluding the current message)
         chat_history = get_recent_chat_history(request.user)
-
-        # Build the full prompt with system instructions and history
         prompt = f"""You are a friendly, knowledgeable fitness coach AI. 
 The user's main fitness goal is: {user_goal}. 
-However, you should answer **any** questions related to fitness, health, nutrition, and exercise, 
-adapting your advice to the user's specific query.
-Keep responses helpful, encouraging, and concise (under 150 words). 
+Answer the user's question completely. Do not cut off mid‑sentence. 
 Provide practical, evidence‑based advice.
 
 Conversation history:
@@ -364,45 +323,26 @@ Conversation history:
 User: {user_message}
 Coach:"""
 
-        # Save user message (will appear in future history)
-        ChatMessage.objects.create(
-            user=request.user,
-            message=user_message,
-            is_ai=False
-        )
+        ChatMessage.objects.create(user=request.user, message=user_message, is_ai=False)
 
-        # Get AI response using your existing get_ai_response function
         try:
             ai_response = get_ai_response(prompt)
         except Exception as e:
             logger.error(f"All Gemini models failed: {e}")
             return JsonResponse({"error": "AI service unavailable"}, status=503)
 
-        # Save AI response
-        ChatMessage.objects.create(
-            user=request.user,
-            message=ai_response,
-            is_ai=True
-        )
-
+        ChatMessage.objects.create(user=request.user, message=ai_response, is_ai=True)
         return JsonResponse({"reply": ai_response})
 
     except Exception as e:
         logger.error(f"Unhandled exception: {e}\n{traceback.format_exc()}")
         return JsonResponse({"error": "Internal server error"}, status=500)
-    
-  
+
 @login_required
 def load_chat_by_date(request, date):
     try:
-        # Convert 'YYYY-MM-DD' string to date
         selected_date = datetime.strptime(date, '%Y-%m-%d').date()
-
-        chats = ChatMessage.objects.filter(
-            user=request.user,
-            timestamp__date=selected_date
-        ).order_by('timestamp')
-
+        chats = ChatMessage.objects.filter(user=request.user, timestamp__date=selected_date).order_by('timestamp')
         data = {
             "chats": [
                 {"sender": "ai" if chat.is_ai else "user", "message": chat.message}
@@ -410,18 +350,17 @@ def load_chat_by_date(request, date):
             ]
         }
         return JsonResponse(data)
-
     except Exception as e:
         return JsonResponse({"error": str(e)}, status=400)
 
-
-# ================== Registration View ========================
+# ------------------------------
+# Registration & Feedback
+# ------------------------------
 def register_user(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = make_password(request.POST['password'])
         user = User.objects.create(username=username, password=password)
-
         UserProfile.objects.create(
             user=user,
             age=request.POST['age'],
@@ -432,11 +371,8 @@ def register_user(request):
             activity_level=request.POST['activity_level']
         )
         return redirect('login')
-
     return render(request, 'common/register.html')
 
-
-# ================== Feedback View ========================
 def feedback(request):
     if request.method == 'POST':
         form = FeedbackForm(request.POST)
@@ -447,13 +383,9 @@ def feedback(request):
         form = FeedbackForm()
     return render(request, 'user_module/feedback.html', {'form': form})
 
-
-
-
-
-
-
-# ================== Food Recommender View ========================
+# ------------------------------
+# Food Recommender (fully automatic misspelling handling)
+# ------------------------------
 def load_meals():
     file_path = os.path.join('data', 'healthy_meals_paragraphs_dataset.json')
     with open(file_path, 'r') as f:
@@ -463,80 +395,135 @@ def extract_ingredients(description):
     match = re.search(r'ingredients: (.+?)(?:\.|$)', description.lower())
     if match:
         ingredient_text = match.group(1)
-
-        # Split by commas and 'and' for better accuracy
         parts = re.split(r',|\sand\s', ingredient_text)
         return [ingredient.strip() for ingredient in parts if ingredient.strip()]
     return []
 
+# ---------- Cached valid ingredients ----------
+_VALID_INGREDIENTS_CACHE = None
+
+def _get_all_ingredients():
+    global _VALID_INGREDIENTS_CACHE
+    if _VALID_INGREDIENTS_CACHE is None:
+        meals = load_meals()
+        ingredients_set = set()
+        for meal in meals:
+            ingredients_set.update(extract_ingredients(meal.get("description", "")))
+        _VALID_INGREDIENTS_CACHE = ingredients_set
+        print("[DEBUG] Loaded ingredients:", sorted(ingredients_set)[:50])
+    return _VALID_INGREDIENTS_CACHE
+
+def _normalize_ingredient(ingredient):
+    return ingredient.strip().lower()
+
+def _find_best_match(typed_ingredient, valid_ingredients, score_cutoff=70):
+    """
+    Automatically find the best matching ingredient using:
+    1. Exact match (fast)
+    2. FuzzyWuzzy ratio (handles typos like 'chikken' -> 'grilled chicken')
+    3. Substring match (fallback)
+    Returns (best_match, original_typed) or (None, None)
+    """
+    typed = _normalize_ingredient(typed_ingredient)
+    
+    # Exact match
+    if typed in valid_ingredients:
+        return typed, typed_ingredient
+    
+    # Fuzzy match: compare typed against all valid ingredients
+    # Use process.extractOne from fuzzywuzzy
+    match, score = process.extractOne(typed, valid_ingredients, scorer=fuzz.ratio)
+    if score >= score_cutoff:
+        print(f"[DEBUG] Fuzzy match: '{typed}' -> '{match}' (score {score})")
+        return match, typed_ingredient
+    
+    # Substring match (typed inside ingredient or vice versa)
+    for valid in valid_ingredients:
+        if typed in valid or valid in typed:
+            print(f"[DEBUG] Substring match: '{typed}' in/contains '{valid}'")
+            return valid, typed_ingredient
+    
+    print(f"[DEBUG] No match found for '{typed}'")
+    return None, None
 
 def meal_matches_preferences(meal, include_ingredients=None, exclude_ingredients=None):
-    ingredients = extract_ingredients(meal.get("description", ""))
-    include_ingredients = [i.lower() for i in include_ingredients] if include_ingredients else []
-    exclude_ingredients = [i.lower() for i in exclude_ingredients] if exclude_ingredients else []
-
-    if include_ingredients and not any(ing in ingredients for ing in include_ingredients):
-        return False
-    if exclude_ingredients and any(ing in ingredients for ing in exclude_ingredients):
-        return False
-    return True
-
-
-def get_meals_by_category(category, include_ingredients=None, exclude_ingredients=None):
-    meals = load_meals()
-    all_ingredients = set()
-    for meal in meals:
-        all_ingredients.update(extract_ingredients(meal.get("description", "")))
+    meal_ingredients = extract_ingredients(meal.get("description", ""))
+    meal_ingredients_lower = [i.lower() for i in meal_ingredients]
 
     include_ingredients = [i.strip().lower() for i in include_ingredients] if include_ingredients else []
     exclude_ingredients = [e.strip().lower() for e in exclude_ingredients] if exclude_ingredients else []
-    invalid_includes = [i for i in include_ingredients if i not in all_ingredients]
+
+    if include_ingredients:
+        found = False
+        for inc in include_ingredients:
+            for meal_ing in meal_ingredients_lower:
+                if inc == meal_ing or inc in meal_ing or meal_ing in inc:
+                    found = True
+                    break
+            if found:
+                break
+        if not found:
+            return False
+
+    if exclude_ingredients:
+        for exc in exclude_ingredients:
+            for meal_ing in meal_ingredients_lower:
+                if exc == meal_ing or exc in meal_ing or meal_ing in exc:
+                    return False
+    return True
+
+def get_meals_by_category(category, include_ingredients=None, exclude_ingredients=None):
+    meals = load_meals()
+    all_valid_ingredients = _get_all_ingredients()
+
+    include_ingredients = [i.strip().lower() for i in include_ingredients] if include_ingredients else []
+    exclude_ingredients = [e.strip().lower() for e in exclude_ingredients] if exclude_ingredients else []
+
+    # Find the best match for each include ingredient (automatic)
+    matched_includes = []
+    invalid_includes = []
+    for inc in include_ingredients:
+        best_match, _ = _find_best_match(inc, all_valid_ingredients)
+        if best_match:
+            matched_includes.append(inc)   # Keep original for logging, but matching uses substring later
+        else:
+            invalid_includes.append(inc)
 
     if invalid_includes:
+        print(f"[DEBUG] Invalid includes: {invalid_includes}")
         return [], invalid_includes
 
+    # Use the original include_ingredients for substring matching (they will match via substring)
     matched_meals = [
         meal for meal in meals
         if meal.get("category", "").lower() == category.lower()
         and meal_matches_preferences(meal, include_ingredients, exclude_ingredients)
     ]
+    print(f"[DEBUG] Found {len(matched_meals)} meals for includes {include_ingredients}")
     return matched_meals, []
-
-
 
 def food_recommender_view(request):
     if request.user.is_authenticated:
         try:
             user_profile = UserProfile.objects.get(user=request.user)
-
-            print("[DEBUG] Raw user_profile.goal:", repr(user_profile.goal))
-
-            # 🔁 Normalize underscores to spaces here
             goal_input = user_profile.goal.strip().lower().replace('_', ' ') if user_profile.goal else "maintain"
-            print("[DEBUG] Normalized goal_input:", repr(goal_input))
-
             goal_map = {
                 "weight loss": "Weight Loss",
                 "fat loss": "Weight Loss",
                 "lose fat": "Weight Loss",
-
                 "weight gain": "Weight Gain",
                 "muscle gain": "Weight Gain",
                 "build muscle": "Weight Gain",
-
                 "maintain": "Maintain",
                 "maintenance": "Maintain",
                 "fitness": "Maintain",
                 "stay fit": "Maintain"
             }
-
             USER_GOAL = goal_map.get(goal_input, "Maintain")
-            print("[DEBUG] Final mapped USER_GOAL:", USER_GOAL)
-
         except UserProfile.DoesNotExist:
             USER_GOAL = "Maintain"
-
-
+    else:
+        USER_GOAL = "Maintain"
 
     include = request.GET.get('include', '')
     exclude = request.GET.get('exclude', '')
@@ -564,7 +551,6 @@ def food_recommender_view(request):
 
     if meals and meal_index < len(meals):
         meal = meals[meal_index]
-
         if request.user.is_authenticated and meal:
             ingredients = extract_ingredients(meal.get("description", ""))
             FoodRecommendation.objects.create(
@@ -587,19 +573,14 @@ def food_recommender_view(request):
     }
     return render(request, 'common/food_recommender.html', context)
 
+# ------------------------------
+# Homepage
+# ------------------------------
 
-
-
-
-
-# ================== Homepage View ========================
-
-
+@csrf_exempt
 @login_required
 def homepage(request):
     user = request.user
-
-    # Get all unique chat dates for the user
     chat_dates = (
         ChatMessage.objects
         .filter(user=user)
@@ -608,21 +589,14 @@ def homepage(request):
         .distinct()
         .order_by('-date')
     )
-
-    # Use the latest date if available
     latest_date = chat_dates[0] if chat_dates else None
-
-    # Fetch chat history for latest date or set empty list
     chat_history = (
         ChatMessage.objects
         .filter(user=user, timestamp__date=latest_date)
         .order_by('timestamp')
         if latest_date else []
     )
-
     return render(request, 'user_module/chatbot.html', {
         'chat_dates': chat_dates,
         'chat_history': chat_history
     })
-
-

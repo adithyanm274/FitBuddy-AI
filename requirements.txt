@@ -9,10 +9,12 @@ click==8.3.1
 colorama==0.4.6
 cryptography==46.0.5
 distro==1.9.0
+dj-database-url==3.1.2
 Django==6.0.2
 djangorestframework==3.16.1
 filelock==3.25.0
 fsspec==2026.2.0
+fuzzywuzzy==0.18.0
 google-auth==2.48.0
 google-genai==1.65.0
 h11==0.16.0
@@ -23,6 +25,7 @@ huggingface_hub==1.5.0
 idna==3.11
 Jinja2==3.1.6
 joblib==1.5.3
+Levenshtein==0.27.3
 markdown-it-py==4.0.0
 MarkupSafe==3.0.3
 mdurl==0.1.2
@@ -32,6 +35,7 @@ networkx==3.6.1
 numpy==2.4.2
 packaging==26.0
 pandas==3.0.1
+psycopg2-binary==2.9.11
 pyasn1==0.6.2
 pyasn1_modules==0.4.2
 pycparser==3.0
@@ -40,7 +44,9 @@ pydantic_core==2.41.5
 Pygments==2.19.2
 PyMySQL==1.1.2
 python-dateutil==2.9.0.post0
+python-Levenshtein==0.27.3
 PyYAML==6.0.3
+RapidFuzz==3.14.5
 requests==2.32.5
 rich==14.3.3
 rsa==4.9.1
@@ -62,3 +68,4 @@ typing_extensions==4.15.0
 tzdata==2025.3
 urllib3==2.6.3
 websockets==16.0
+whitenoise==6.12.0

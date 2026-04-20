@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2bvzdg^a75$d1z8ntaigae63^6w2zh2w(ul1=8ns210_*3yip1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['Fitbuddy-AI.koyeb.app']
 
 
 # Application definition
@@ -144,3 +144,4 @@ import os
 # Add near your other settings
 
   # Replace with your key
+GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY','AIzaSyAempffoDr6LdL3dL3S9jPFaJigSRuKxlc')
