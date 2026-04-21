@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-import pandas as pd
 import os
 
 # --- Vocabularies (remain global, they're small) ---
@@ -11,13 +10,17 @@ difficulty_levels = ['beginner', 'intermediate', 'advanced']
 workout_to_idx = {w: i for i, w in enumerate(workout_types)}
 diff_to_idx = {d: i for i, d in enumerate(difficulty_levels)}
 
-# --- Dataset and Model Classes (unchanged) ---
+# --- Dataset class with lazy pandas import ---
 class WorkoutDataset(Dataset):
     def __init__(self, csv_path):
+        # Import pandas only when needed
+        import pandas as pd
         df = pd.read_csv(csv_path)
+
         self.sequences = []
         self.extra_features = []
         self.targets = []
+
         for _, row in df.iterrows():
             seq = [
                 (workout_to_idx[row['day1_workout']], diff_to_idx[row['day1_diff']]),
@@ -41,6 +44,7 @@ class WorkoutDataset(Dataset):
         target = torch.tensor(self.targets[idx], dtype=torch.long)
         return (input_seq, extra_feat), target
 
+# --- RNN Model ---
 class WorkoutRNN(nn.Module):
     def __init__(self, workout_vocab_size, diff_vocab_size, embed_dim, hidden_dim, extra_feat_dim):
         super().__init__()
@@ -70,7 +74,7 @@ class WorkoutRNN(nn.Module):
         diff_out = self.fc_diff(combined)
         return workout_out, diff_out
 
-# --- Helper functions for training and prediction ---
+# --- Training helper (not called on Render) ---
 def train_model(model, dataloader, epochs=10, lr=0.001):
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
@@ -88,6 +92,7 @@ def train_model(model, dataloader, epochs=10, lr=0.001):
             total_loss += loss.item()
         print(f"Epoch {epoch+1}/{epochs}, Loss: {total_loss/len(dataloader):.4f}")
 
+# --- Prediction helper ---
 def predict_next_day(model, input_seq, extra_feat):
     model.eval()
     with torch.no_grad():
@@ -98,11 +103,8 @@ def predict_next_day(model, input_seq, extra_feat):
         diff_idx = torch.argmax(diff_out, dim=1).item()
         return workout_types[workout_idx], difficulty_levels[diff_idx]
 
-# --- Lazy loading: only runs when you explicitly call a function ---
+# --- Lazy training (call only when you want to train, never on startup) ---
 def load_and_train(csv_path="Fitness/data_creation/rnn_data.csv", model_save_path="Fitness/data_creation/workout_rnn_model.pth"):
-    """
-    Call this function from a management command or view to train the model.
-    """
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"CSV file not found at {csv_path}")
     dataset = WorkoutDataset(csv_path)
@@ -118,10 +120,11 @@ def load_and_train(csv_path="Fitness/data_creation/rnn_data.csv", model_save_pat
     torch.save(model.state_dict(), model_save_path)
     return model
 
+# --- Safe model loader for production (returns None if file missing) ---
 def load_trained_model(model_path="Fitness/data_creation/workout_rnn_model.pth"):
-    """
-    Load a pre-trained model without training.
-    """
+    if not os.path.exists(model_path):
+        # Missing model – caller should handle gracefully (e.g., fallback to random)
+        return None
     model = WorkoutRNN(
         workout_vocab_size=len(workout_types),
         diff_vocab_size=len(difficulty_levels),
@@ -132,7 +135,3 @@ def load_trained_model(model_path="Fitness/data_creation/workout_rnn_model.pth")
     model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
     model.eval()
     return model
-
-# Optional: if you still want to pre-load a model, uncomment the next line,
-# but DO NOT leave it uncommented for deployment.
-# model = load_trained_model()   # Only if the .pth file exists and you need it globally.
