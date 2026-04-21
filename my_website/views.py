@@ -8,8 +8,9 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.db.models.functions import TruncDate
 from django.utils import timezone
-from .forms import FeedbackForm, UserProfileForm
+from django.conf import settings
 from .models import UserProfile, GeneratedWorkout, ChatMessage, FoodRecommendation
+from user_module.forms import FeedbackForm, UserProfileForm   # corrected import
 import json
 import os
 import re
@@ -17,7 +18,6 @@ import logging
 import random
 import traceback
 from datetime import datetime
-from django.conf import settings
 
 # ------------------------------
 # Lazy import wrappers for heavy/AI libraries
@@ -481,13 +481,10 @@ def get_meals_by_category(category, include_ingredients=None, exclude_ingredient
     all_valid_ingredients = _get_all_ingredients()
     include_ingredients = [i.strip().lower() for i in include_ingredients] if include_ingredients else []
     exclude_ingredients = [e.strip().lower() for e in exclude_ingredients] if exclude_ingredients else []
-    matched_includes = []
     invalid_includes = []
     for inc in include_ingredients:
         best_match, _ = _find_best_match(inc, all_valid_ingredients)
-        if best_match:
-            matched_includes.append(inc)
-        else:
+        if not best_match:
             invalid_includes.append(inc)
     if invalid_includes:
         return [], invalid_includes
