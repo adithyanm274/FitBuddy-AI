@@ -112,14 +112,11 @@ workout_to_idx = {'push': 0, 'pull': 1, 'legs': 2, 'cardio': 3}
 diff_to_idx = {'beginner': 0, 'intermediate': 1, 'advanced': 2}
 
 def load_trained_model():
-    model = WorkoutRNN(
-        workout_vocab_size=len(workout_types),
-        diff_vocab_size=len(difficulty_levels),
-        embed_dim=8,
-        hidden_dim=16,
-        extra_feat_dim=4
-    )
-    model.load_state_dict(torch.load("Fitness/data_creation/workout_rnn_model.pth"))
+    model_path = "Fitness/data_creation/workout_rnn_model.pth"
+    if not os.path.exists(model_path):
+        return None   # or return a dummy model
+    model = WorkoutRNN(...)
+    model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
     model.eval()
     return model
 
