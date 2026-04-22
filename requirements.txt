@@ -8,7 +8,7 @@ djangorestframework==3.16.1
 
 # Database (choose one)
 # mysqlclient==2.2.8
-# PyMySQL==1.1.2
+PyMySQL==1.1.2
 
 # Machine Learning (CPU only)
 --extra-index-url https://download.pytorch.org/whl/cpu
