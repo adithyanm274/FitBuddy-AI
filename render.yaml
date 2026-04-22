@@ -3,10 +3,11 @@ services:
     name: fitbuddy-app
     env: python
     buildCommand: |
+      apt-get update && apt-get install -y libopenblas-dev gfortran
       pip install -r requirements.txt
       python manage.py collectstatic --noinput
       python manage.py migrate
-    startCommand: gunicorn my_website.wsgi
+    startCommand: gunicorn my_website.wsgi:application --timeout 120 --preload --workers 2 --threads 2
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: my_website.settings
