@@ -8,8 +8,7 @@ services:
       pip install -r requirements.txt
       python manage.py collectstatic --noinput
       python manage.py migrate
-    startCommand: gunicorn my_website.wsgi:application --bind 0.0.0.0:$PORT --timeout 180 --preload --workers 1 --threads 2
-    healthCheckPath: /health/
+startCommand: gunicorn my_website.wsgi:application --bind 0.0.0.0:$PORT --timeout 300 --preload --workers 1 --threads 1    healthCheckPath: /health/
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: my_website.settings
