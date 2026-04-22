@@ -9,7 +9,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.db.models.functions import TruncDate
 from django.utils import timezone
 from django.conf import settings
-from .models import UserProfile, GeneratedWorkout, ChatMessage, FoodRecommendation
+from user_mobile.models import UserProfile, GeneratedWorkout, ChatMessage, FoodRecommendation
 from user_module.forms import FeedbackForm, UserProfileForm   # corrected import
 import json
 import os
