@@ -624,5 +624,12 @@ def homepage(request):
         'chat_dates': chat_dates,
         'chat_history': chat_history
     })
+    
+    
+    
+def predict(request):
+    import torch
+    import torch.nn.functional as F
+    # ... rest of view    
 
 
