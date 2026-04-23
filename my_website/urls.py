@@ -19,6 +19,9 @@ from django.contrib import admin
 from django.urls import path,include
 from . import views
 
+from .views import health_check
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.landing_page, name='landing_page'),
@@ -26,5 +29,8 @@ urlpatterns = [
     path('admin_module/', include('admin_module.urls')),
     path('logout/', views.logout_view, name='logout'),
     path('login/', views.login_view, name='login'),
+    
+    
+     path('health/', health_check, name='health_check'),
     
 ]

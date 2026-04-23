@@ -1,6 +1,9 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth import authenticate, login,logout
 
+from django.http import HttpResponse
+
+
 def login_view(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -27,3 +30,6 @@ def logout_view(request):
 
 def landing_page(request):
     return render(request, 'common/index.html')
+
+def health_check(request):
+    return HttpResponse("OK", content_type="text/plain")
