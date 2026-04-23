@@ -630,6 +630,13 @@ def homepage(request):
 def predict(request):
     import torch
     import torch.nn.functional as F
-    # ... rest of view    
+    # ... rest of view  
+    
+    
+def workout_prediction(request):
+    import torch
+    import pandas as pd
+    from google import genai
+    # ... rest of view  
 
 
