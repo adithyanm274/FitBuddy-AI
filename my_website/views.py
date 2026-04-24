@@ -31,8 +31,5 @@ def landing_page(request):
     return render(request, 'common/index.html')
 
 
-from django.http import HttpResponse
 
-def health_check(request):
-    return HttpResponse("OK", content_type="text/plain")
 
