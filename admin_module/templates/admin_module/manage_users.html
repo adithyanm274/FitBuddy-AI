@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users - FitBuddy AI Admin</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Inter (default) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font to the entire body */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        /* Custom styles for the navbar toggle icon animation */
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Navbar - Reusing the design from the Admin Homepage -->
+    <nav class="bg-gray-800 shadow-lg py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <!-- Brand name on the left -->
+            <a class="text-white text-2xl font-extrabold tracking-wide" href="{% url 'admin_homepage' %}">FitBuddy AI Admin</a>
+
+            <!-- Mobile Navbar Toggle Button -->
+            <div class="block lg:hidden">
+                <button id="navbar-toggle-btn" class="text-gray-400 hover:text-white focus:outline-none focus:text-white">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Navbar Menu Items -->
+            <div class="hidden lg:flex lg:items-center lg:w-auto" id="navbar-menu">
+                <ul class="flex flex-col lg:flex-row lg:space-x-6 text-lg">
+                    <li class="my-2 lg:my-0">
+                        <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition duration-300 ease-in-out" href="{% url 'admin_homepage' %}">Dashboard</a>
+                    </li>
+                    <li class="my-2 lg:my-0">
+                        <a class="text-white bg-gray-700 px-3 py-2 rounded-md transition duration-300 ease-in-out" href="{% url 'manage_users' %}">Manage User Accounts</a>
+                    </li>
+                    <li class="my-2 lg:my-0">
+                        <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition duration-300 ease-in-out" href="{% url 'admin_feedback_list' %}">View User Feedback</a>
+                    </li>
+                    <li class="my-2 lg:my-0">
+                        <a class="bg-red-600 text-white font-semibold px-4 py-2 rounded-md hover:bg-red-700 transition duration-300 ease-in-out shadow-md" href="{% url 'logout' %}">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-white shadow-xl rounded-xl p-6 md:p-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                <h1 class="text-3xl font-extrabold text-gray-900 mb-4 md:mb-0">Manage User Accounts</h1>
+                <!-- "Add New User" button removed as per request -->
+            </div>
+
+            <!-- Table Container for Horizontal Scrolling on Small Screens -->
+            <div class="overflow-x-auto border border-gray-200 rounded-lg shadow-sm">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase tracking-wider rounded-tl-lg">ID</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Username</th>
+                            <!-- Uncomment if Email is needed -->
+                            <!-- <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Email</th> -->
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase tracking-wider rounded-tr-lg">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-100">
+                        {% for user in users %}
+                        <tr class="{% cycle 'bg-white' 'bg-gray-50' %} hover:bg-blue-50 transition duration-150 ease-in-out">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ user.id }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">{{ user.username }}</td>
+                            <!-- Uncomment if Email is needed -->
+                            <!-- <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">{{ user.email }}</td> -->
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <button onclick="showDeleteModal('{{ user.id }}', '{{ user.username }}')" class="text-red-600 hover:text-red-800 font-medium hover:underline transition duration-150 ease-in-out">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="4" class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500 italic">No users found to manage.</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="delete-modal" class="fixed inset-0 bg-gray-600 bg-opacity-75 hidden items-center justify-center z-50 transition-opacity duration-300 ease-in-out opacity-0">
+        <div class="bg-white rounded-lg shadow-xl p-6 max-w-sm w-full transform -translate-y-4 opacity-0 transition-all duration-300 ease-in-out">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-gray-900">Confirm Deletion</h3>
+                <button onclick="hideDeleteModal()" class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <p class="text-gray-700 mb-6">Are you sure you want to delete user <strong id="delete-username" class="font-semibold text-gray-900"></strong> (ID: <span id="delete-userid" class="font-mono text-gray-800"></span>)? This action cannot be undone.</p>
+            <div class="flex justify-end space-x-3">
+                <button onclick="hideDeleteModal()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out">
+                    Cancel
+                </button>
+                <a id="confirm-delete-link" href="#" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">
+                    Delete
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for mobile navbar toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbarToggleBtn = document.getElementById('navbar-toggle-btn');
+            const navbarMenu = document.getElementById('navbar-menu');
+
+            if (navbarToggleBtn && navbarMenu) {
+                navbarToggleBtn.addEventListener('click', () => {
+                    navbarMenu.classList.toggle('hidden');
+                    // For mobile, make sure it stacks vertically when visible
+                    navbarMenu.classList.toggle('flex');
+                    navbarMenu.classList.toggle('flex-col');
+                });
+            }
+
+            // --- Modal Logic ---
+            const deleteModal = document.getElementById('delete-modal');
+            const deleteUsernameSpan = document.getElementById('delete-username');
+            const deleteUserIdSpan = document.getElementById('delete-userid');
+            const confirmDeleteLink = document.getElementById('confirm-delete-link');
+
+            window.showDeleteModal = (userId, username) => {
+                deleteUsernameSpan.textContent = username;
+                deleteUserIdSpan.textContent = userId;
+                confirmDeleteLink.href = `{% url 'delete_user' 0 %}`.replace('0', userId); // Dynamically set URL
+
+                deleteModal.classList.remove('hidden', 'opacity-0');
+                deleteModal.classList.add('flex', 'opacity-100');
+                // Trigger transition for modal content
+                setTimeout(() => {
+                    deleteModal.querySelector('div').classList.remove('-translate-y-4', 'opacity-0');
+                    deleteModal.querySelector('div').classList.add('translate-y-0', 'opacity-100');
+                }, 10); // Small delay to allow 'hidden' to be removed first
+            };
+
+            window.hideDeleteModal = () => {
+                deleteModal.querySelector('div').classList.remove('translate-y-0', 'opacity-100');
+                deleteModal.querySelector('div').classList.add('-translate-y-4', 'opacity-0');
+                deleteModal.classList.remove('opacity-100');
+                deleteModal.classList.add('opacity-0');
+                setTimeout(() => {
+                    deleteModal.classList.remove('flex');
+                    deleteModal.classList.add('hidden');
+                }, 300); // Wait for transition to complete before hiding
+            };
+        });
+    </script>
+</body>
+</html>

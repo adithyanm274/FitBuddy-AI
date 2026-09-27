@@ -1,0 +1,77 @@
+[
+  {
+    "meal_name": "Grilled Chicken Salad",
+    "category": "Weight Loss",
+    "description": "A light high-protein lunch. ingredients: chicken breast, mixed greens, tomato, cucumber, and olive oil."
+  },
+  {
+    "meal_name": "Vegetable Omelette",
+    "category": "Weight Loss",
+    "description": "Low-calorie breakfast with fiber. ingredients: egg whites, spinach, bell pepper, onion, and mushroom."
+  },
+  {
+    "meal_name": "Greek Yogurt Berry Bowl",
+    "category": "Weight Loss",
+    "description": "Quick snack to curb cravings. ingredients: greek yogurt, blueberries, strawberries, and chia seeds."
+  },
+  {
+    "meal_name": "Baked Salmon with Broccoli",
+    "category": "Weight Loss",
+    "description": "Omega-3 rich dinner plate. ingredients: salmon, broccoli, lemon, garlic, and olive oil."
+  },
+  {
+    "meal_name": "Turkey Lettuce Wraps",
+    "category": "Weight Loss",
+    "description": "Carb-light alternative to sandwiches. ingredients: ground turkey, lettuce, tomato, onion, and avocado."
+  },
+  {
+    "meal_name": "Overnight Oats",
+    "category": "Weight Gain",
+    "description": "Calorie-dense breakfast for bulking. ingredients: oats, whole milk, peanut butter, banana, and honey."
+  },
+  {
+    "meal_name": "Chicken Rice Bowl",
+    "category": "Weight Gain",
+    "description": "Classic muscle-building meal. ingredients: chicken breast, brown rice, broccoli, olive oil, and avocado."
+  },
+  {
+    "meal_name": "Protein Smoothie",
+    "category": "Weight Gain",
+    "description": "Easy post-workout shake. ingredients: whole milk, banana, peanut butter, oats, and whey protein."
+  },
+  {
+    "meal_name": "Beef and Sweet Potato",
+    "category": "Weight Gain",
+    "description": "Hearty dinner with complex carbs. ingredients: lean beef, sweet potato, olive oil, and green beans."
+  },
+  {
+    "meal_name": "Tuna Pasta",
+    "category": "Weight Gain",
+    "description": "High-calorie pasta dish. ingredients: whole wheat pasta, tuna, olive oil, tomato, and parmesan."
+  },
+  {
+    "meal_name": "Quinoa Veggie Bowl",
+    "category": "Maintain",
+    "description": "Balanced plant-forward lunch. ingredients: quinoa, chickpeas, spinach, tomato, and olive oil."
+  },
+  {
+    "meal_name": "Grilled Chicken Wrap",
+    "category": "Maintain",
+    "description": "Moderate macros for everyday fitness. ingredients: chicken breast, whole wheat tortilla, lettuce, tomato, and yogurt."
+  },
+  {
+    "meal_name": "Scrambled Eggs on Toast",
+    "category": "Maintain",
+    "description": "Simple balanced breakfast. ingredients: eggs, whole grain bread, spinach, tomato, and olive oil."
+  },
+  {
+    "meal_name": "Lentil Soup",
+    "category": "Maintain",
+    "description": "Fiber-rich comfort meal. ingredients: lentils, carrot, onion, garlic, and olive oil."
+  },
+  {
+    "meal_name": "Tofu Stir Fry",
+    "category": "Maintain",
+    "description": "Light stir fry with plant protein. ingredients: tofu, brown rice, bell pepper, broccoli, and soy sauce."
+  }
+]

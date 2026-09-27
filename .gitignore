@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+/media/
+/staticfiles/
+
+# Environment / secrets
+.env
+.env.*
+*.env
+
+# Model/data files that are large (keep only if needed for deploy)
+# Comment these out if you DO want to commit them for Render
+# *.pth
+# *.joblib
+# Fitness/data_creation/*.csv
+# Fitness/data_creation/*.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data dumps
+data_dump.json
